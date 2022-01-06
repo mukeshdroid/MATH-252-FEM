@@ -1,4 +1,7 @@
 #class for nodes
+import math
+import numpy as np
+
 class node:
    
     # init method or constructor
