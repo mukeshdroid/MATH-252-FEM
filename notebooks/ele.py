@@ -29,3 +29,9 @@ class ele:
                     [-c2 , -cs , c2 , cs],
                     [-cs , -s2 , cs , s2]])
         return ((self.ym * self.area) / self.length) * mat
+    
+class elep:
+    def __init__(self, num, node_a , node_b):
+        self.num = num
+        self.node_a = node_a 
+        self.node_b = node_b
