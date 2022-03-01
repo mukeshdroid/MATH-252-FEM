@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\title{Mathematical Background for FEM}
+\author{Mukesh Tiwari}
+\begin{document}
+	\maketitle
+	
+	\section{Numerical Methods to Solve Differential Equations}
+	
+	\subsection{Finite Difference Methods}
+		Works directly with the differential equation by replacing the derivatives by their respective difference counterparts.
+		\[ \frac{dy}{dx} = f'(x) \approx \frac{f(x+h)-f(x)}{h} \]
+		
+		we could also have 
+		
+		\[ f'(x)\approx\frac{f(x+h)-f(x-h)}{2h} \]
+		
+		\subsubsection{Advantages}
+		
+		
+		\subsubsection{Disadvantages}
+		
+	\begin{itemize}
+		\item difficult to write general purpose code
+		\item may need fictitious values at the end points
+		\item difficult to apply to irregular domains
+	\end{itemize}
+		
+		
+	\subsection{Finite Element Methods}
+	
+	
+	\subsection{Finite Volume Methods}
+	
+	\section{Finite Element Method}
+	
+	\subsection{Types}
+	\begin{enumerate}
+		\item Direct Variational Methods
+		
+		Methods that make use of various variational principles, such as that of virtual work and minimum total energy in solids and structures directly to solve problems.
+		
+		\item Variational Methods
+		
+		
+		\item Weighted Residual
+		
+	\end{enumerate}	
+	\subsection{Problems}
+	Consider a implicit first order differential equation. 
+	
+	\[ F(x,y,y') = 0 \]
+	
+	Numerical methods are no interest to us if we can get an exact solution, say $ f(x) $, analytically. We thus seek a approximate solution which is close to actual f(x) in some sense.
+	
+	\subsubsection{Boundary Conditions}
+	
+		\begin{itemize}
+			\item Natural Boundary Conditions
+			\item Essential Boundary Conditions
+		\end{itemize}
+	 
+	 \subsection{Why discretize?}
+	 
+	 Asking for a solution from a numerical method that is valid at all points is asking too much as we would have infinite number of values to compute. 
+	 
+	 
+	 
+	 \subsection{Need for weighted integral}
+	 
+	 \subsection{Weak forms of differential Equations}
+	 
+	 Differential Equations present problems in strong form in the sense that the solution to a differntial equation additionally has to satisfy some continuity and differentiability conditions.
+	 These conditions are absolutely essential for exact solutions but when we only want approximate solutions we could relax these a bit to obtain problems that are in a sense the same problem but have fewer or no restraints to what smoothness criteria the solution must adheree to.
+	 
+	 The idea of weak forms is not restricted to differtiable equations only and we can have weak forms in any branch of mathematics and they are useful in applying the concepts of linear algebra to solve the problem. 
+	
+	
+	
+	
+\end{document}
