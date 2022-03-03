@@ -4,6 +4,9 @@
 
 % Theme choice:
 \usetheme{CambridgeUS}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
 
 % Title page details: 
 \title{Beamer Inbuilt Themes (CambridgeUS)} 
@@ -51,17 +54,39 @@ and this is an ordered list:
 
 
 % Blocks frame
-\section{Blocks in Beamer}
-\begin{frame}{Blocks in Beamer}
-    \begin{block}{Standard Block}
-        This is a standard block.
+\section{{PROGRESS}}
+\begin{frame}[t]{\textbf{\huge{Progress so far...}}}\vspace{20pt}
+\begin{block} {\textbf{\color{black}{\large{Theoritical Background}}}}
+   Studied about FEM and its applications
+       \end{block}  \vspace{20pt}
+
+\begin{block} {\textbf{\color{black}{\large{Probem solving and identification}}}}
+    solved various problems manually and  continued working on truss.
+       \end{block}  \vspace{20pt}
+    \begin{alertblock}{\textbf{\color{black}{\large{Implementation And Analysis}}}}
+         implemented in python in multiple attempts  and analyzed. 
+    \end{alertblock}  \vspace{20pt}
+\end{frame}
+
+
+\begin{frame}
+    \begin{exampleblock}{\textbf{\color{black}{\large{Class Implementation}}}}
+     custom classs in jupyter notebook for nodes and matrices.
+        
+
+    \end{exampleblock}\vspace{20pt}
+
+
+
+ \begin{block} {\textbf{\color{black}{\large{Mechanical Approach}}}}
+     followed joint and sectional method and verified .
+\end{block}\vspace{20pt}
+
+    \begin{block}{\textbf{\color{black}{\large {Visualization}}}}
+        code for visualizing any problem given the coordinates.
+
     \end{block}
-    \begin{alertblock}{Alert Message}
-        This block presents alert message.
-    \end{alertblock}
-    \begin{exampleblock}{An example of typesetting tool}
-        Example: MS Word, \LaTeX{}
-    \end{exampleblock}
+
 \end{frame} 
 
 \end{document}
