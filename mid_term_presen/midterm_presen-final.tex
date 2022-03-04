@@ -2,30 +2,94 @@
 % Inbuilt themes in beamer
 \documentclass{beamer}
 
-% Theme choice:
-%\usetheme{CambridgeUS}
-
+\usetheme{Singapore}
+\definecolor{mycolor}{RGB}{208,208,237}
 \usepackage{graphicx} % Allows including images
 
-% Title page details: 
-\title{Mid-Term Presentation} 
-\author{Group A}
-\date{\today}
-\logo{\large \LaTeX{}}
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
 
+\setbeamercolor{footline}{fg=blue}
+\setbeamerfont{footline}{series=\bfseries}
+
+%% Title page details: 
+%\title{\Huge \textbf{Mid-Term Presentation} \\
+%\large FEM and its application to static structures}
+%\author{\textbf{Group A:}\\
+%\footnotesize{Samrajya Raj Acharya , 1\\
+%Bishesh Kafle , 9\\
+%Priyanka Panta , 13\\
+%Mukesh Tiwari, 22}}
+%
+%\logo{\includegraphics[width=2cm]{logo.png}}
+%
+%
+%\begin{document}
+%
+%
+%% Title page frame
+%\begin{frame}
+%    \titlepage 
+%\end{frame}
+
+\title{\Huge Mid-Term Presentation}
+\titlegraphic{\includegraphics[height=3cm]{logo.png}}
+\subtitle{FEM and its application to static structures}
+\author{Group A}
+
+\setbeamercolor{title}{bg=mycolor,fg=black}
+
+\makeatletter
+\setbeamertemplate{title page}
+{
+	\vbox{}
+	\vfill
+	\begin{centering}
+		\begin{beamercolorbox}[sep=8pt,center]{title}
+			\usebeamerfont{title}\inserttitle
+		\end{beamercolorbox}
+		\setbeamercolor{title}{bg=white,fg=black}
+		\vspace{20pt}
+		\begin{beamercolorbox}[sep=8pt,center]{title}
+			{\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+			\vskip1.25em%
+			\ifx\insertsubtitle\@empty%
+			\else%
+			\vskip0.25em%
+			{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+			\fi%     
+		\end{beamercolorbox}%
+		\vskip1em\par
+		\begin{beamercolorbox}[sep=8pt,center]{author}
+			\usebeamerfont{author}\insertauthor
+		\end{beamercolorbox}
+		\vskip-1em\par % change here
+		\begin{beamercolorbox}[sep=8pt,center]{institute}
+			\usebeamerfont{institute}\insertinstitute
+		\end{beamercolorbox}
+%		\begin{beamercolorbox}[sep=8pt,center]{date}
+%			\usebeamerfont{date}\insertdate
+%		\end{beamercolorbox}\vskip0.5em
+	\end{centering}
+	\vfill
+}
+\makeatother
 
 \begin{document}
-
-% Title page frame
-\begin{frame}
-    \titlepage 
-\end{frame}
+	
+	\maketitle
 
 % Remove logo from the next slides
 \logo{}
 
 %--BISHESH 
-	
+
+\part{}
+\section{Introduction}
 \begin{frame}{Introduction}
 	\begin{itemize}
 		\item  Finite Element Method (FEM) is a procedure of numerical solution of a domain viewed as the collection of sub-domains.
@@ -38,24 +102,36 @@
 \end{frame}
 
 
+\section{Progress}
 \begin{frame}{Gantt Chart : Progress}
 	\includegraphics[width = 10cm, height = 6cm]{progress.png}
 \end{frame}
 
 %---PRIYANKA
 
-\section{{PROGRESS}}
-\begin{frame}[t]{\textbf{\huge{Progress so far...}}}\vspace{20pt}
-	\begin{block} {\textbf{\color{black}{\large{Theoritical Background}}}}
-		Studied about FEM and its applications
-	\end{block}  \vspace{20pt}
+
+\begin{frame}[t]{Progress so far.}
+	\begin{itemize}
+		\item \textbf{Problem Identification}\\
+			each member came up with various problems where FEM is used and we decided on trusses.
+			
+				\item \textbf{Theoretical Background}\\
+			Went through basic ideas about FEM and the new concepts.
+		\end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{Progress so far. }
+	\begin{itemize}
+		\item \textbf{Manual and Python Implementation}\\
+		wrote custom classes and procedures for solving the problem in python. Tested code against examples in book and worked on  debugging.
+		
+		\item \textbf{Visualization}\\
+		Worked on visualizing the structure and the deformations in python using the problem data and solution data.\\
+		
 	
-	\begin{block} {\textbf{\color{black}{\large{Probem solving and identification}}}}
-		solved various problems manually and  continued working on truss.
-	\end{block}  \vspace{20pt}
-	\begin{alertblock}{\textbf{\color{black}{\large{Implementation And Analysis}}}}
-		implemented in python in multiple attempts  and analyzed. 
-	\end{alertblock}  \vspace{20pt}
+	\end{itemize}
+	
 \end{frame}
 
 
@@ -80,10 +156,8 @@
 \end{frame} 
 
 %---SAMRAJYA
-
-% Lists frame
-\section{Things left}
-\begin{frame}{Things left}
+\section{Upcoming}
+\begin{frame}{Future Plans}
 	
 	Working of solution:
 	\begin{itemize}
@@ -102,7 +176,7 @@
 \end{frame}
 
 % Lists frame
-\section{Things left}
+
 \begin{frame}{Things left}
 	
 	Theoretical readings:
@@ -119,6 +193,12 @@
 		
 	\end{itemize}
 	
+\end{frame}
+
+\part{}
+\begin{frame}
+	\centering \Large
+	\emph{Thank You}
 \end{frame}
 
 

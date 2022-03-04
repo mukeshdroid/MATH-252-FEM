@@ -1,3 +1,3 @@
-\beamer@sectionintoc {1}{{PROGRESS}}{4}{0}{1}
-\beamer@sectionintoc {2}{Things left}{6}{0}{2}
-\beamer@sectionintoc {3}{Things left}{7}{0}{3}
+\beamer@sectionintoc {1}{Introduction}{2}{1}{1}
+\beamer@sectionintoc {2}{Progress}{3}{1}{2}
+\beamer@sectionintoc {3}{Upcoming}{7}{1}{3}
