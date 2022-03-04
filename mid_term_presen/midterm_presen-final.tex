@@ -113,7 +113,11 @@
 \begin{frame}[t]{Progress so far.}
 	\begin{itemize}
 		\item \textbf{Problem Identification}\\
-			each member came up with various problems where FEM is used and we decided on trusses.
+			Each member came up with various problems where FEM is used and we decided on trusses.
+			\begin{center}
+					\includegraphics[width=0.8\linewidth]{truss}
+			\end{center}
+		
 			
 				\item \textbf{Theoretical Background}\\
 			Went through basic ideas about FEM and the new concepts.
@@ -126,69 +130,70 @@
 		\item \textbf{Manual and Python Implementation}\\
 		wrote custom classes and procedures for solving the problem in python. Tested code against examples in book and worked on  debugging.
 		
+		\begin{center}
+			\includegraphics[width=0.85\linewidth]{defnode}
+		\end{center}
+			
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Verifying solution }
+	\begin{itemize}
+		\begin{center}
+			\includegraphics[width=\linewidth]{ans1}
+			\includegraphics[width=0.9\linewidth]{book}
+		\end{center}
+		
+
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Progress so far. }
+	\begin{itemize}
+
+		
 		\item \textbf{Visualization}\\
 		Worked on visualizing the structure and the deformations in python using the problem data and solution data.\\
 		
-	
+		
 	\end{itemize}
 	
 \end{frame}
-
-
-\begin{frame}
-	\begin{exampleblock}{\textbf{\color{black}{\large{Class Implementation}}}}
-		custom classs in jupyter notebook for nodes and matrices.
-		
-		
-	\end{exampleblock}\vspace{20pt}
-	
-	
-	
-	\begin{block} {\textbf{\color{black}{\large{Mechanical Approach}}}}
-		followed joint and sectional method and verified .
-	\end{block}\vspace{20pt}
-	
-	\begin{block}{\textbf{\color{black}{\large {Visualization}}}}
-		code for visualizing any problem given the coordinates.
-		
-	\end{block}
-	
-\end{frame} 
-
 %---SAMRAJYA
 \section{Upcoming}
 \begin{frame}{Future Plans}
 	
-	Working of solution:
+	\textbf{Finalizing Implementation:}
 	\begin{itemize}
-		\item Solution part is working for some problem but not for all.
-		\item Why, how and in which cases the solution can work in all problem is to be worked on.
+		\item The current version of implementation doesn't work for all cases.
+		\item Determining edge cases and their debugging is needed.
 		
 	\end{itemize}
+	\vspace{10px}
+	\textbf{Understanding Theoretical aspects:}
+\begin{itemize}
+	\item We have been learning the new concepts of FEM and will be getting much better understanding after we implement it ourselves.
 	
-	Software Visualization:
-	\begin{itemize}
-		\item Data has been generated, solved upon and visualized to an extent both theoretically and manually.
-		\item The streamlining of all these components and compiling it is needed.
-		
-	\end{itemize}
-	
+\end{itemize}
 \end{frame}
 
 % Lists frame
 
 \begin{frame}{Things left}
 	
-	Theoretical readings:
+
+	\textbf{Streamlining Procedure:}
 	\begin{itemize}
-		\item As of now, we have only worked and implemented on software.
-		\item Knowledge of mandatory principles and applications of FEM is to be thoroughly studied.
+		\item Separate modules have been independently developed to deal with problem definition , solution and visualization
+		\item The streamlining of all these components and compiling into one coherent module is needed.
 		
 	\end{itemize}
-	
-	Report Writing:
+	\vspace{15px}
+	\textbf{Report Writing:}
 	\begin{itemize}
-		\item Final report of the project is to be written.
+		\item Final report of the project is to be completed and proof read.
 		
 		
 	\end{itemize}
@@ -198,7 +203,7 @@
 \part{}
 \begin{frame}
 	\centering \Large
-	\emph{Thank You}
+	\Huge{Thank You}
 \end{frame}
 
 
