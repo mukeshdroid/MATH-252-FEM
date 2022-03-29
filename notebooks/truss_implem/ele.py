@@ -1,6 +1,7 @@
 #class for elements
 import math
 import numpy as np
+import node
 
 class ele:
    
@@ -12,7 +13,7 @@ class ele:
         self.area = area
         self.ym = ym
         self.theta = theta
-        self.node_a = node_a 
+        self.node_a = node_a
         self.node_b = node_b
         
     def print(self):
