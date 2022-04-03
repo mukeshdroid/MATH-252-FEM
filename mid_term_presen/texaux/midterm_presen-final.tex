@@ -1,0 +1,202 @@
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+\usetheme{Singapore}
+\definecolor{mycolor}{RGB}{208,208,237}
+\usepackage{graphicx} % Allows including images
+\usepackage{multimedia}
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\setbeamercolor{footline}{fg=blue}
+\setbeamerfont{footline}{series=\bfseries}
+
+%% Title page details: 
+%\title{\Huge \textbf{Mid-Term Presentation} \\
+%\large FEM and its application to static structures}
+%\author{\textbf{Group A:}\\
+%\footnotesize{Samrajya Raj Acharya , 1\\
+%Bishesh Kafle , 9\\
+%Priyanka Panta , 13\\
+%Mukesh Tiwari, 22}}
+%
+%\logo{\includegraphics[width=2cm]{logo.png}}
+%
+%
+%\begin{document}
+%
+%
+%% Title page frame
+%\begin{frame}
+%    \titlepage 
+%\end{frame}
+
+\title{\Huge Mid-Term Presentation}
+\titlegraphic{\includegraphics[height=3cm]{logo.png}}
+\subtitle{FEM and its application to static structures}
+\author{Group A}
+
+\setbeamercolor{title}{bg=mycolor,fg=black}
+
+\makeatletter
+\setbeamertemplate{title page}
+{
+	\vbox{}
+	\vfill
+	\begin{centering}
+		\begin{beamercolorbox}[sep=8pt,center]{title}
+			\usebeamerfont{title}\inserttitle
+		\end{beamercolorbox}
+		\setbeamercolor{title}{bg=white,fg=black}
+		\vspace{20pt}
+		\begin{beamercolorbox}[sep=8pt,center]{title}
+			{\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+			\vskip1.25em%
+			\ifx\insertsubtitle\@empty%
+			\else%
+			\vskip0.25em%
+			{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+			\fi%     
+		\end{beamercolorbox}%
+		\vskip1em\par
+		\begin{beamercolorbox}[sep=8pt,center]{author}
+			\usebeamerfont{author}\insertauthor
+		\end{beamercolorbox}
+		\vskip-1em\par % change here
+		\begin{beamercolorbox}[sep=8pt,center]{institute}
+			\usebeamerfont{institute}\insertinstitute
+		\end{beamercolorbox}
+%		\begin{beamercolorbox}[sep=8pt,center]{date}
+%			\usebeamerfont{date}\insertdate
+%		\end{beamercolorbox}\vskip0.5em
+	\end{centering}
+	\vfill
+}
+\makeatother
+
+\begin{document}
+	
+	\maketitle
+
+% Remove logo from the next slides
+\logo{}
+
+%--BISHESH 
+
+\part{}
+\section{Introduction}
+\begin{frame}{Introduction}
+	\begin{itemize}
+		\item  Finite Element Method (FEM) is a procedure of numerical solution of a domain viewed as the collection of sub-domains.
+		\vspace{0.6cm}
+		\item FEM on static structures computing the stress and displacement.
+		\vspace{0.6cm}
+		\item The actual problem will be replaced by simpler ones to find one approximate solution. 
+	\end{itemize}
+	
+\end{frame}
+
+
+\section{Progress}
+\begin{frame}{Gantt Chart : Progress}
+	\includegraphics[width = 10cm, height = 6cm]{progress.png}
+\end{frame}
+
+%---PRIYANKA
+
+
+\begin{frame}[t]{Progress so far.}
+	\begin{itemize}
+		\item \textbf{Problem Identification}\\
+			Each member came up with various problems where FEM is used and we decided on trusses.
+			\begin{center}
+					\includegraphics[width=0.8\linewidth]{truss}
+			\end{center}
+		
+			
+				\item \textbf{Theoretical Background}\\
+			Went through basic ideas about FEM and the new concepts.
+		\end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{Progress so far. }
+	\begin{itemize}
+		\item \textbf{Manual and Python Implementation}\\
+		wrote custom classes and procedures for solving the problem in python. Tested code against examples in book and worked on  debugging.
+		
+		\begin{center}
+			\includegraphics[width=0.85\linewidth]{defnode}
+		\end{center}
+			
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Verifying solution }
+		\begin{center}
+			\includegraphics[width=\linewidth]{ans1}
+			\includegraphics[width=0.9\linewidth]{book}
+		\end{center}
+		
+		\begin{itemize}
+\item \textbf{Visualization}\\
+Worked on visualizing the structure and the deformations in python using the problem data and solution data.\\
+		
+	\end{itemize}
+\end{frame}
+
+
+%---SAMRAJYA
+\section{Upcoming}
+\begin{frame}{Future Plans}
+	
+	\textbf{Finalizing Implementation:}
+	\begin{itemize}
+		\item The current version of implementation doesn't work for all cases.
+		\item Determining edge cases and their debugging is needed.
+		
+	\end{itemize}
+	\vspace{10px}
+	\textbf{Understanding Theoretical aspects:}
+\begin{itemize}
+	\item We have been learning the new concepts of FEM and will be getting much better understanding after we implement it ourselves.
+	
+\end{itemize}
+\end{frame}
+
+% Lists frame
+
+\begin{frame}{Things left}
+	
+
+	\textbf{Streamlining Procedure:}
+	\begin{itemize}
+		\item Separate modules have been independently developed to deal with problem definition , solution and visualization
+		\item The streamlining of all these components and compiling into one coherent module is needed.
+		
+	\end{itemize}
+	\vspace{15px}
+	\textbf{Report Writing:}
+	\begin{itemize}
+		\item Final report of the project is to be completed and proof read.
+		
+		
+	\end{itemize}
+	
+\end{frame}
+
+\part{}
+\begin{frame}
+	\centering \Large
+	\Huge{Thank You}
+\end{frame}
+
+
+\end{document}
