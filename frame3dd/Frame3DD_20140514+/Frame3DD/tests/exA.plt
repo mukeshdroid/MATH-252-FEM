@@ -1,6 +1,6 @@
 # FRAME3DD ANALYSIS RESULTS  http://frame3dd.sf.net/ VERSION 20140514+ 
 # Example A: linear static analysis of a 2D truss with support settlement (kips in)  
-# Thu Mar 31 21:00:54 2022
+# Sun Apr  3 19:07:39 2022
 # G N U P L O T   S C R I P T   F I L E 
 set autoscale
 unset border
@@ -53,14 +53,14 @@ set label ' 21' at   5.4000e+02,   1.2000e+02,   0.0000e+00
 # set xlabel 'x'
 # set ylabel 'y'
 # set zlabel 'z'
-set title "Example A: linear static analysis of a 2D truss with support settlement (kips in)  \nanalysis file: ./tests/exA.3dd   deflection exaggeration: 50.0   load case 1 of 2 "
+set title "Example A: linear static analysis of a 2D truss with support settlement (kips in)  \nanalysis file: ./../tests/exA.3dd   deflection exaggeration: 50.0   load case 1 of 2 "
 unset clip; 
 set clip one; set clip two
 set xyplane 0 
   plot '/tmp//exA-msh' u 2:3 t 'undeformed mesh' w lp lw 1 lt 5 pt 6, '/tmp//exA-mshf.001' u 1:2 t 'load case 1 of 2' w l lw 1 lt 3
 # splot '/tmp//exA-msh' u 2:3:4 t 'load case 1 of 2' w lp  lw 1 lt 5 pt 6, '/tmp//exA-mshf.001' u 1:2:3 t 'load case 1 of 2' w l lw 1 lt 3
 pause -1
-set title "Example A: linear static analysis of a 2D truss with support settlement (kips in)  \nanalysis file: ./tests/exA.3dd   deflection exaggeration: 50.0   load case 2 of 2 "
+set title "Example A: linear static analysis of a 2D truss with support settlement (kips in)  \nanalysis file: ./../tests/exA.3dd   deflection exaggeration: 50.0   load case 2 of 2 "
 unset clip; 
 set clip one; set clip two
 set xyplane 0 
