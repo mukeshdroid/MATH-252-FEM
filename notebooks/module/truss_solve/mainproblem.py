@@ -4,6 +4,8 @@ import turtle
 import numpy as np
 import math
 import copy
+import pyautogui
+import time
 
 class truss:
 
@@ -137,34 +139,57 @@ class truss:
         print(self.dis_list)
         print(self.force_list)
 
-    def visualize(self):
+    def visualize(self, height = 560 , width = 1300 , grid = 12 , speed = 7, delay = 4):
+        width , height = pyautogui.size()
         turtle.title("Visualization")
+        turtle.setup(width ,height)
+        #turtle.screensize(width , height)
         turtle.bgcolor("black")
+        ratio = height / width
+        turtle.setworldcoordinates(-2, -2 * ratio, grid, ratio * grid)
+        
         t = turtle.Turtle()
+        t.speed(speed)
         t.hideturtle()
         t.pensize(5)
         t.pencolor("blue")
 
         for ele in self.ele_list:
-            t.goto(ele.node_a.pos_x*70, ele.node_a.pos_y*70)
-            t.goto(ele.node_b.pos_x*70, ele.node_b.pos_y*70)
+            t.goto(ele.node_a.pos_x, ele.node_a.pos_y)
+            t.pendown()
+            t.goto(ele.node_b.pos_x, ele.node_b.pos_y)
+            t.penup()
         
+        t.speed(0)
         for node in self.node_list:
             t.penup()
-            t.goto(node.pos_x*70, node.pos_y*70)
+            t.goto(node.pos_x, node.pos_y)
             t.pendown()
             t.dot(15,"red") 
-        #turtle.Screen().exitonclick()
         
+        
+        t.penup()
+        t.goto((ele.node_a.pos_x + ele.node_a.dis_x), (ele.node_a.pos_y + ele.node_a.dis_y))
+        t.pendown()
+        
+        #def fun():
+        #    return None 
+        #turtle.onclick(fun, btn=1, add=None)
+        time.sleep(delay)
+        
+        t.speed(speed)
         #after solving
         t.pencolor("green")        
         for ele in self.ele_list:
-            t.goto((ele.node_a.pos_x + ele.node_a.dis_x)*70, (ele.node_a.pos_y + ele.node_a.dis_y)*70)
-            t.goto((ele.node_b.pos_x + ele.node_b.dis_x)*70, (ele.node_b.pos_y + ele.node_b.dis_y)*70)
+            t.goto((ele.node_a.pos_x + ele.node_a.dis_x), (ele.node_a.pos_y + ele.node_a.dis_y))
+            t.pendown()
+            t.goto((ele.node_b.pos_x + ele.node_b.dis_x), (ele.node_b.pos_y + ele.node_b.dis_y))
+            t.penup()
         
+        t.speed(0)
         for node in self.node_list:
             t.penup()
-            t.goto((node.pos_x + node.dis_x)*70, (node.pos_y  + node.dis_y)*70)
+            t.goto((node.pos_x + node.dis_x), (node.pos_y  + node.dis_y))
             t.pendown()
             t.dot(15,"yellow") 
         turtle.Screen().exitonclick()
