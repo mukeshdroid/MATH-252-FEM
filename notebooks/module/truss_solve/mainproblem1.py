@@ -31,17 +31,35 @@ class truss:
 #             #include append to list
 #             pass
 
-        node1 = node(1,0,0,0,0,np.nan,np.nan)
-        node2 = node(2,2,0,0,0,np.nan,np.nan)
-        node3 = node(3,2,2,np.nan,np.nan,0.1,-0.2)
+        node1 = node(1,0,0,0,0,0,0)
+        node2 = node(2,2,0,0,0,0,0)
+        node3 = node(3,4,0,0,0,0,0)
+        node4 = node(4,6,0,0,0,0,0)
+        node5 = node(5,8,0,0,0,0,0)
+        node6 = node(6,8,2.918,np.nan,np.nan,0.2,-0.1)
+        node7 = node(7,6,2.1838,np.nan,np.nan,0,-0.1)
+        node8 = node(8,4,1.4559,np.nan,np.nan,0,-0.1)
+        node9 = node(9,2,0.7279,np.nan,np.nan,0,-0.1)
 
-        self.node_list = [node1,node2,node3]
+        self.node_list = [node1 , node2 , node3,node4,node5,node6,node7,node8,node9]
 
-        ele1 = ele(1,1,1,1, 0 , node1 , node2)
-        ele2 = ele(2,1,1, 1 , math.pi / 2 , node2 , node3)
-        ele3 = ele(3,1*math.sqrt(2),1, 1 , math.pi / 4 , node1 , node3)
+        ele1 = ele(1,2.0000,1,1, 0 , node1 , node2)
+        ele2 = ele(2,2.0000,1, 1 , 0, node2 , node3)
+        ele3 = ele(3,2.000,1, 1 , 0, node3 , node4)
+        ele4 = ele(4,2.0000,1, 1 , 0 , node4 , node5)
+        ele5 = ele(5,2.9118,1, 1 , math.pi / 2 , node5 , node6)
+        ele6 = ele(6,2.1284,1,1, math.pi / 9, node7 , node6)
+        ele7 = ele(7,2.1284,1, 1 , math.pi / 9 , node8 , node7)
+        ele8 = ele(8,2.1284,1, 1 , math.pi / 9 , node9 , node8)
+        ele9 = ele(9,2.1284,1, 1 , math.pi / 9 , node1 , node9)
+        ele10 = ele(10,0.7279,1, 1 , math.pi / 2, node2 , node9)
+        ele11 = ele(11,2.4738,1, 1 , math.pi / 5 , node2 , node8)
+        ele12 = ele(12,1.4559,1,1, math.pi / 2, node3 , node8)
+        ele13 = ele(13,2.4738,1, 1 , 4*math.pi / 5 , node4 , node8)
+        ele14 = ele(14,2.1838,1, 1 , math.pi / 2 , node4 , node7)
+        ele15 = ele(15,3.5325,1, 1 , 14*math.pi / 45 , node4, node6)
 
-        self.ele_list = [ele1, ele2, ele3]
+        self.ele_list = [ele1 , ele2 ,ele3,ele4,ele5,ele6,ele7,ele8,ele9,ele10,ele11,ele12,ele13,ele14,ele15]
     
     def globalstiff(self):
         #dimension of global matrix
@@ -129,7 +147,10 @@ class truss:
 
         for ele in self.ele_list:
             t.goto(ele.node_a.pos_x*70, ele.node_a.pos_y*70)
+            t.pendown()
             t.goto(ele.node_b.pos_x*70, ele.node_b.pos_y*70)
+            t.penup()
+        
         
         for node in self.node_list:
             t.penup()
@@ -137,6 +158,7 @@ class truss:
             t.pendown()
             t.dot(15,"red") 
         #turtle.Screen().exitonclick()
+        
         t.penup()
         t.goto((ele.node_a.pos_x + ele.node_a.dis_x)*70, (ele.node_a.pos_y + ele.node_a.dis_y)*70)
         t.pendown()
@@ -145,7 +167,9 @@ class truss:
         t.pencolor("green")        
         for ele in self.ele_list:
             t.goto((ele.node_a.pos_x + ele.node_a.dis_x)*70, (ele.node_a.pos_y + ele.node_a.dis_y)*70)
+            t.pendown()
             t.goto((ele.node_b.pos_x + ele.node_b.dis_x)*70, (ele.node_b.pos_y + ele.node_b.dis_y)*70)
+            t.penup()
         
         for node in self.node_list:
             t.penup()

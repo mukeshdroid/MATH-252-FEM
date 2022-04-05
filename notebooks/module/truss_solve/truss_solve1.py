@@ -137,10 +137,9 @@ class truss:
             t.pendown()
             t.dot(15,"red") 
         #turtle.Screen().exitonclick()
-        t.penup()
-        t.goto((ele.node_a.pos_x + ele.node_a.dis_x)*70, (ele.node_a.pos_y + ele.node_a.dis_y)*70)
-        t.pendown()
-        
+       
+	t.goto((ele[0].node_a.pos_x + ele[0].node_a.dis_x)*70, (ele[0].node_a.pos_y + ele[0].node_a.dis_y)*70)
+ 
         #after solving
         t.pencolor("green")        
         for ele in self.ele_list:
