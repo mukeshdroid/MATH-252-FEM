@@ -1,0 +1,15 @@
+2,1,1,0, node1 , node2
+2,1,1,0, node2 , node3
+2,1,1,0, node3 , node4
+2,1,1,0, node4 , node5
+2.9118,1,1, math.pi / 2 , node5 , node6
+2.1284,1,1, math.pi / 9, node7 , node6
+2.1284,1,1, math.pi / 9 , node8 , node7
+2.1284,1,1, math.pi / 9 , node9 , node8
+2.1284,1,1, math.pi / 9 , node1 , node9
+0.7279,1,1, math.pi / 2, node2 , node9
+2.4738,1,1, math.pi / 5 , node2 , node8
+1.4559,1,1, math.pi / 2, node3 , node8
+2.4738,1,1, 4*math.pi / 5 , node4 , node8
+2.1838,1,1, math.pi / 2 , node4 , node7
+3.5325,1,1, 14*math.pi / 45 , node4, node6
