@@ -140,13 +140,10 @@ class truss:
         print(self.force_list)
 
     def visualize(self, height = 560 , width = 1300 , grid = 12 , speed = 7, delay = 4):
-        try:
-            width , height = pyautogui.size()
-        except:
-            None
-
+        width , height = pyautogui.size()
         turtle.title("Visualization")
         turtle.setup(width ,height)
+        #turtle.screensize(width , height)
         turtle.bgcolor("black")
         ratio = height / width
         turtle.setworldcoordinates(-2, -2 * ratio, grid, ratio * grid)
