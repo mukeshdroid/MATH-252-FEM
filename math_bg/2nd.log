@@ -1,0 +1,393 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  16 APR 2022 22:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**2nd.tex
+(./2nd.tex
+LaTeX2e <2018-12-01>
+(d:/programs/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(d:/programs/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./2nd.aux)
+\openout1 = `2nd.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.5 ...{dx}$ - wf$) dx$ - wa$ \frac{du}{dx}\biggr$
+                                                  |_{x=L} + wa$ \frac{du}{dx...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.5 ...{dx}$ - wf$) dx$ - wa$ \frac{du}{dx}\biggr$
+                                                  |_{x=L} + wa$ \frac{du}{dx...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 ...{dx}$ - wf$) dx$ - wa$ \frac{du}{dx}\biggr$
+                                                  |_{x=L} + wa$ \frac{du}{dx...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra \right.
+\bigg ...hbox {$\left #1\vbox to14.5\p@ {}\right .
+                                                  \n@space $}}
+l.5 ...{dx}$ - wf$) dx$ - wa$ \frac{du}{dx}\biggr$
+                                                  |_{x=L} + wa$ \frac{du}{dx...
+I'm ignoring a \right that had no matching \left.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 ...c{du}{dx}\biggr$|_{x=L} + wa$ \frac{du}{dx}
+                                                  \biggr|_{x=0}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\frac #1#2->{\begingroup #1\endgroup \over #2}
+                                              
+l.5 ...c{du}{dx}\biggr$|_{x=L} + wa$ \frac{du}{dx}
+                                                  \biggr|_{x=0}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.6 	
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 	  Now n_
+             x=-1$ at x= 0 and n_x=1$ at x= L\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 	  Now n_x=-1$ at x= 0 and n_
+                                 x=1$ at x= L\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 ...- wf$) dx$ - $n_x wa$ $\frac{du}{dx}$\biggr
+                                                  $|_{x=L} - n_x wa$ $\frac{...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.9 ... wf$) dx$ - $n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=L} - n_x wa$ $\frac{d...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.9 ... wf$) dx$ - $n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=L} - n_x wa$ $\frac{d...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 ... wf$) dx$ - $n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=L} - n_x wa$ $\frac{d...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra \right.
+\bigg ...hbox {$\left #1\vbox to14.5\p@ {}\right .
+                                                  \n@space $}}
+l.9 ... wf$) dx$ - $n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=L} - n_x wa$ $\frac{d...
+I'm ignoring a \right that had no matching \left.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 ...ggr$|_{x=L} - n_x wa$ $\frac{du}{dx}$\biggr
+                                                  $|_{x=0}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.9 ...gr$|_{x=L} - n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=0}\\
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.9 ...gr$|_{x=L} - n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=0}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 ...gr$|_{x=L} - n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=0}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra \right.
+\bigg ...hbox {$\left #1\vbox to14.5\p@ {}\right .
+                                                  \n@space $}}
+l.9 ...gr$|_{x=L} - n_x wa$ $\frac{du}{dx}$\biggr$
+                                                  |_{x=0}\\
+I'm ignoring a \right that had no matching \left.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 	    = 	$\int
+                  _{a}^b$ (a$ \frac{dw}{dt}$ $\frac{du}{dx}$ - wf$) dx$ - (w...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...w}{dt}$ $\frac{du}{dx}$ - wf$) dx$ - (wQ)_
+                                                  0 - (w$\theta$)_L\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...c{du}{dx}$ - wf$) dx$ - (wQ)_0 - (w$\theta
+                                                  $)_L\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...u}{dx}$ - wf$) dx$ - (wQ)_0 - (w$\theta$)_
+                                                  L\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.11 	
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 	         i.e;  u(0)= u_
+                             0 	-----> w(0)=0\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.16 	        $\int
+                   _{0}^{L}(a \frac{dw}{dx} \frac{du}{dx}- wf)dx -w(L)Q_L\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.17 	
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 	   Q= a $\frac{du}{dx}$n_
+                               x\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 	   where $n_
+                  x$ is angle between x-axis and normal to boundary.\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 	   	n_
+            x= -1$ at left and	n_x=  1$ at right.\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 	   	n_x= -1$ at left and	n_
+                                 x=  1$ at right.\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 ...ac{du}{dx})dx = -\int_{a}^{b} v dw$ +[wv]_
+                                                  a^{b}$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+(d:/programs/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+ [1
+
+{d:/programs/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./2nd
+.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 5 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 220 strings out of 492623
+ 2475 string characters out of 6129060
+ 65603 words of memory out of 5000000
+ 4216 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,6n,19p,210b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr5.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb>
+Output written on 2nd.pdf (1 page, 79186 bytes).
+PDF statistics:
+ 40 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

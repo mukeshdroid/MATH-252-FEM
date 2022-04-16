@@ -1,0 +1,41 @@
+\documentclass{article}
+\begin{document}
+	So, our equation becomes \\
+	0 =	$\int_{a}^b (a \frac{dw}{dt} \frac{du}{dx} - wf) dx -[wa \frac{du}{dx}]_{b}^a$\\
+	  = 	$\int_{a}^b$ (a $\frac{dw}{dt}$ $\frac{du}{dx}$ - wf$) dx$ - wa$ \frac{du}{dx}\biggr$|_{x=L} + wa$ \frac{du}{dx}\biggr|_{x=0}\\
+	  
+	  Now n_x=-1$ at x= 0 and n_x=1$ at x= L\\
+	  So L,\\
+	  0 = 	$\int_{a}^b$ (a$ \frac{dw}{dt}$ $\frac{du}{dx}$ - wf$) dx$ - $n_x wa$ $\frac{du}{dx}$\biggr$|_{x=L} - n_x wa$ $\frac{du}{dx}$\biggr$|_{x=0}\\
+	    = 	$\int_{a}^b$ (a$ \frac{dw}{dt}$ $\frac{du}{dx}$ - wf$) dx$ - (wQ)_0 - (w$\theta$)_L\\
+	    
+	    Finally we impose essential boundary conditions.\\
+	    We require that weight function vanishes at boundary where essential boundary conditions are specified.\\
+	         i.e;  u(0)= u_0 	-----> w(0)=0\\
+	    Thus we get,\\
+	        $\int_{0}^{L}(a \frac{dw}{dx} \frac{du}{dx}- wf)dx -w(L)Q_L\\
+	        
+	   The dependent variable of problem expressed in same form as weight function (w) appears  in the boundary term is called primary variable (PV). Specfying PV is essential boundary condition (EBC).\\
+	   
+	   In our case W is present in boundary term . So, our PV is u.\\
+	   It could be $\frac{du}{dx}$ for higher order differential equation.\\
+	   The secondary variable is denoted by Q and \\
+	   Q= a $\frac{du}{dx}$n_x\\
+	   where $n_x$ is angle between x-axis and normal to boundary.\\
+	   
+	   For 1D problem, 
+	   	n_x= -1$ at left and	n_x=  1$ at right.\\
+	   	
+	   	We have used the fact that \\
+	   	$\int_{a}^{b}$(w$ \frac{du}{dx})dx = -\int_{a}^{b} v dw$ +[wv]_a^{b}$\\
+	   	
+	   	and considered v = -a$\frac{du}{dx}$\\
+	   	
+	   	Note that, we take care of boundary conditions which maybe
+	   	\begin{itemize}
+	   		\item natural
+	   		\item essential
+	   \end{itemize}	
+	  
+	  
+\end{document}

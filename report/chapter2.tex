@@ -4,5 +4,183 @@
 \section{{\bf{Theoretical/Conceptual Framework}}}
 {\bf\color{red}In this section, the author(s) should describe the theoretical/mathematical principles behind the whole work relative to the project. The information collected from literature review shall be relevant in this section.
 }
+%part assigned to samrajya
 
+Consider\\
+\begin{eqnarray}
+	-\frac{d}{dx} \left[a(x)\frac{du}{dx} \right] = f(x)  \quad\quad  \text{for} \quad\quad  0<x<L.\\
+\end{eqnarray}
+for $u(x)$ subject to the boundary conditions\\
+\begin{eqnarray}
+	u(0)= u_0 \\
+	\vspace{1cm}
+	a(x)\frac{du}{dx}\biggr|_{x=L} = Q_L	
+\end{eqnarray}
+where $a(x)$ and $f(x)$ are known functions and 
+$u_0$ and $Q_L$ are known values.
+In case of bar (which is a axially loaded structure)\\
+
+\begin{eqnarray*}
+	u = \text{displacement}\\
+	a(x)= \text{EA (stiffness)}\\
+	f = \text{distributed axial force}\\
+	Q_L= \text{axial load}\\
+\end{eqnarray*}
+
+Now, we want an approximation of u(x) in the form
+\begin{eqnarray}
+	u(x)\approx u_N(x) = \sum\limits_{j=1}^N c_j\phi_{j} + (x) +\phi_{0}(x)
+\end{eqnarray}
+
+%%page 2 of copy
+
+ Substituting  $U_N$(x) in our Differential Equation,\\
+ 
+ \begin{eqnarray}
+ 	-\frac{d}{dx} \left[a(x)\frac{dU_N}{dx} \right] = f(x)  \quad\quad  \text{for} \quad\quad  0<x<L.
+ \end{eqnarray}
+
+If this equally holds for all $x \in [0,L] $ the solution is exact. Since, we assume it only as an approximation.
+we define Residual Function $R(x,c_1, c_2, c_3,...,c_N)$ as
+\begin{eqnarray}
+	R = -\frac{d}{dx} \left[a(x)\frac{dU_N}{dx} \right] - f(x)
+\end{eqnarray} 
+
+We have R $\neq$0 $ \forall x  \in [0, L]$  as a $U_N$ is only a approximation to solution.\\
+
+Now we have various ways to minimize R in some senses over the domain to make this approximation close to the actual solution\\
+\begin{enumerate}
+	\item Collocation Method\\
+	It forces that R is zero at selected N points of the domain.\\
+	i.e; 
+	\begin{eqnarray}
+		R(x,c_1, c_2, c_3,...,c_N) = 0  \quad\quad\quad \forall x=x_i, i = 1,2,...,N
+	\end{eqnarray}
+
+	\item Least Square Method
+		\begin{eqnarray}
+			\frac{\partial}{\partial c_j} \int_{0}^{L} R^2 dx = 0 \quad\quad\quad \forall i = 1,2,...,N
+		\end{eqnarray}
+	
+	\item Weighted Residual Method
+		we desire that 
+			\begin{eqnarray}
+				\int_{0}^{L} w_i(x) R dx = 0 \quad\quad\quad \forall i = 1,2,...,N
+			\end{eqnarray}
+		where $w_i(x)$ are N linearly independent functions called weight functions.
+\end{enumerate}
+
+%page 4
+	Now we convert our differential equation and boundary condition to weak form.\\
+\begin{itemize}
+	\item Step 1 : \\
+	We write the weighted integral statement, i.e;\\
+	\begin{eqnarray}
+		\int_{0}^{L}  w \left[ -\frac{d}{dx} \left( a(x)\frac{du}{dx} \right) - f \right] dx = 0
+	\end{eqnarray}
+
+	It is equivalent to differential equations and does not include any boundary conditions and thus the variable $u$ must be differentiable to as many order as is required by the differential equation.
+	\item Step 2\\
+	Weakening Differentiability conditions
+	\begin{eqnarray}
+		\int_{0}^{L}  \left( w \left[ -\frac{d}{dx} \left( a(x)\frac{du}{dx} \right) \right] - wf \right)  dx = 0
+	\end{eqnarray}
+	Integrating by parts, we get,
+	\begin{eqnarray}
+		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - \left[ wa \frac{du}{dx}\right]_0^L = 0
+	\end{eqnarray}
+
+%%page 5 of copy
+
+	we have used the fact that 
+	\begin{eqnarray}
+		\int_{a}^{b} \left( w \frac{dv}{dx} \right)dx  =  -\int_{a}^{b} v dw + \left[wv\right]_0^L = 0
+	\end{eqnarray}
+
+by considering,
+	\begin{eqnarray}
+		v = -a\frac{du}{dx}
+	\end{eqnarray}
+
+
+	
+\end{itemize}
+%part after assigning to samrajya
+
+\begin{eqnarray}
+	B(w,u) = \int_{0}^{L} a \frac{dw}{dx} \frac{du}{dx} dx \\
+	l(w) = \int_{0}^{L} wf dx + w(L) Q_L
+\end{eqnarray}
+
+Hence, our weak form can be written as
+
+\begin{eqnarray}
+	0 = B(w,u) - l(w)
+\end{eqnarray}
+or ,
+\begin{eqnarray}
+	B(w,u) = l(w)
+\end{eqnarray}
+
+This is the variational form of the problem that is associated with our ODE and its boundary conditions.
+
+When the differential equation is linear and of even order, the resulting weak form will have symmetric bi-linear form in u and w.
+ 	
+
+% Choosing approximate functions
+
+Let us now choose the approximate solutions that satisfy the two conditions for primary variables as other conditions are already included in the weak form. 
+i.e,
+
+\begin{eqnarray}
+	u_h^{e} (x_a) = u_1^{e} \\
+	u_h^{e} (x_b) = u_2^{e}  
+\end{eqnarray}
+let,
+\begin{eqnarray}
+	u_h^{e} (x) = c_1 + c_2 x
+\end{eqnarray}
+
+Then by the conditions,
+
+\begin{eqnarray}
+	u_h^{e} (x_a) = c_1 + c_2 x_a = u_1^{e}\\
+	u_h^{e} (x_b) = c_1 + c_2 x_b = u_2^{e}
+\end{eqnarray}
+
+writing in matrix form, we obtain
+\begin{eqnarray}
+\begin{bmatrix}
+	u_1^{e}\\
+	u_2^{e}
+\end{bmatrix}
+=
+\begin{bmatrix}
+	1 & x_a\\
+	1 & x_b
+\end{bmatrix}
+\begin{bmatrix}
+	c_1^{e}\\
+	c_2^{e}
+\end{bmatrix}
+\end{eqnarray}
+
+We can rewrite the equations as 
+\begin{eqnarray}
+	\begin{bmatrix}
+		c_1^{e}\\
+		c_2^{e}
+	\end{bmatrix}
+	= \frac{1}{x_b - x_a}
+	\begin{bmatrix}
+		x_b & -x_a\\
+		-1 & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		u_1^{e}\\
+		u_2^{e}
+	\end{bmatrix}
+\end{eqnarray}
+
+Hence we get,
 

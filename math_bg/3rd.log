@@ -1,0 +1,280 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  16 APR 2022 22:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**3rd.tex
+(./3rd.tex
+LaTeX2e <2018-12-01>
+(d:/programs/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(d:/programs/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(d:/programs/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(d:/programs/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(d:/programs/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(d:/programs/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(d:/programs/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (./3rd.aux)
+\openout1 = `3rd.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+(d:/programs/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--36
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 		 	u(0)= u_
+                 0      a(x)$\frac{du}{dx}$$\biggr$|_x$_=_L$ = $Q_L$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 		 	u(0)= u_0      a(x)$\frac{du}{dx}
+                                          $$\biggr$|_x$_=_L$ = $Q_L$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.43 		 	u(0)= u_0      a(x)$\frac{du}{dx}
+                                          $$\biggr$|_x$_=_L$ = $Q_L$\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.43 ...u(0)= u_0      a(x)$\frac{du}{dx}$$\biggr$
+                                                  |_x$_=_L$ = $Q_L$\\
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.43 ...u(0)= u_0      a(x)$\frac{du}{dx}$$\biggr$
+                                                  |_x$_=_L$ = $Q_L$\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 ...u(0)= u_0      a(x)$\frac{du}{dx}$$\biggr$
+                                                  |_x$_=_L$ = $Q_L$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra \right.
+<argument> ...\vcenter to\tw@ \big@size {}\right .
+                                                  
+l.43 ...u(0)= u_0      a(x)$\frac{du}{dx}$$\biggr$
+                                                  |_x$_=_L$ = $Q_L$\\
+I'm ignoring a \right that had no matching \left.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 ... u_0      a(x)$\frac{du}{dx}$$\biggr$|_x$_
+                                                  =_L$ = $Q_L$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.43 ..._0      a(x)$\frac{du}{dx}$$\biggr$|_x$_=_
+                                                  L$ = $Q_L$\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 		    u(x)\approx
+                       $u_N$(x) = \sum\limits_{j=1}^N $c_j$$\phi_{j}$ + (x) ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 		    u(x)\approx $u_
+                          N$(x) = \sum\limits_{j=1}^N $c_j$$\phi_{j}$ + (x) ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 		    u(x)\approx $u_N$(x) = \sum
+                                      \limits_{j=1}^N $c_j$$\phi_{j}$ + (x) ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 ...\approx $u_N$(x) = \sum\limits_{j=1}^N $c_
+                                                  j$$\phi_{j}$ + (x) +$\phi_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[1
+
+{d:/programs/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Missing } inserted.
+<inserted text> 
+                }
+l.57 		 \end{enumerate}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[2] (./3rd.aux) ) 
+Here is how much of TeX's memory you used:
+ 834 strings out of 492623
+ 9491 string characters out of 6129060
+ 77035 words of memory out of 5000000
+ 4812 multiletter control sequences out of 15000+600000
+ 4094 words of font info for 16 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,5n,21p,215b,253s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi5.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb>
+Output written on 3rd.pdf (2 pages, 75158 bytes).
+PDF statistics:
+ 39 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

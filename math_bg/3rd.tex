@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+	
+	Coefficients of weight function as its derivatives are called secondary variables (SV).\\
+	In our case, a$\frac{du}{dx}$ is secondary variable.\\
+	If SV is specified in the boundary, then the conditions are called natural boundary condition (NBC).\\
+	Now we convert our differential equation and boundary condition to weak form.\\
+	\begin{itemize}
+		\item Step 1\\
+		   We write the weighted integral statement, i.e;\\
+		   $\int_{0}^{L}$ w[-$\frac{d}{dx}$(a$\frac{du}{dx}$) - f]dx = 0\\
+		   It is equivalent to differential equations and does not include any boundary conditions and thus it must be differentiable as order of differential equation.
+		 \item Step 2\\
+		 Weakening Differentiable of $\phi_{i}$\\
+		 0= $\int_{0}^{L}$ [w[-$\frac{d}{dx}$(a$\frac{du}{dx}$)]- wf ] dx\\
+		 Integrating by parts, we get,\\
+		 0= $\int_{0}^{L}$[(a$\frac{dw}{dx}$$\frac{du}{dx}$) - wf] dx - [wa$\frac{du}{dx}$]\\
+		 \item Step 3\\
+		 Least Square Method,\\
+		 $\frac{d}{dC_j}$ $\int_{0}^{L}$ $R^2$ dx=0 $\forall$ j = 1,2,...,N\\
+		 This also gives N equations for N unknown coefficients.\\
+		 \item Step 4\\
+		 We desire that,\\
+		 $\int_{0}^{L}$ $w_i(x)$ Rdx =  0 $\forall$ i=1,2,...,N\\
+		 where $w_i$'s are N linearly independent functions called weight functions.\\
+		 \\
+		 \\
+		 Substituting  $U_N$(x) in our Differential Equation,\\
+		 -$\frac{d}{dx}$ [a(x)$\frac{dU_N}{dx}$] = f(x) for 0$<x<$L.\\
+		 If this equally holds for all x $\in$[0,L] the solution is exact. Since, we assume it only as an approximation.\\
+		 Define Residual Function as R(x,$c_1$, $c_2$, $c_3$,...,$c_N$)as \\
+		 R = -$\frac{d}{dx}$[a(x)$\frac{dU_N}{dx}$] - f(x)\\
+		 R $\neq$0 $\forall$x  $\in$ [0, L] as a $U_N$ approximation.\\
+		 Now we have various ways to minimize R in some senses over the domain.\\
+		 \begin{enumerate}
+		 	\item Collocation Method\\
+		 	It forces that R is zero at selected N points of the domain.\\
+		 	i.e; R(x, ,$c_1$, $c_2$, $c_3$,...,$c_N$) = 0 $\forall$ x=$x_i$, i $\in$1,2,...,N\\
+		 	Consider\\
+		 	-$\frac{d}{dx}$[a(x)$\frac{du}{dx}$] = f(x) for  0$<x<$L.\\
+		 	For u(x) subject to the boundary conditions\\
+		 	u(0)= u_0      a(x)$\frac{du}{dx}$$\biggr$|_x$_=_L$ = $Q_L$\\
+		 	where a(x) and f(x) are known functions.\\
+		 	$u_0$ and $Q_L$ are known values\\
+		 	In case of bar (only axial load and structure)\\
+		 	u = displacement\\
+		    a(x)= EA (stiffness)\\
+		    f = distributed axial force\\
+		    $Q_L$= axial load\\
+		    Now, we want an approximation of u(x) in the form\\
+		    u(x)\approx $u_N$(x) = \sum\limits_{j=1}^N $c_j$$\phi_{j}$ + (x) +$\phi_{0}$(x)
+		    
+		 	
+		 	
+		 	
+		 \end{enumerate}
+		 
+		 
+		
+		 
+	\end{itemize}
+\end{document}
+	
