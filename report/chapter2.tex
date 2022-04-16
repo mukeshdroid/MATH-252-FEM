@@ -102,6 +102,66 @@ by considering,
 		v = -a\frac{du}{dx}
 	\end{eqnarray}
 
+we can see that now we require that w be differentiable at least once but this also made that u needs to be differentiable only once even though the equation is of second order.//
+Now, we take care of the boundary conditions which are of two types
+\begin{itemize}
+	\item Natural Boundary  condition
+	\item Essential Boundary Condition 
+\end{itemize}
+
+Before defining these conditions we define primary and secondary variables.
+
+\begin{df}{Primary Variable}
+	pass
+\end{df}
+\begin{df}{Secondary Variable}
+	pass
+\end{df}
+
+In our case , $ a \frac{du}{dx}$ is secondary variable.
+
+If secondary variable(SV) is specified in the boundary, then such conditions are called natural boundary conditions (NBC).
+If primary variable(PV) is specified in the boundary, then such conditions are called essential boundary conditions (NBC).
+
+let us now define secondary variable as Q.
+\begin{eqnarray}
+	Q = a\frac{du}{dx} n_x
+\end{eqnarray}
+
+where $n_x$ is ???
+
+For 1D problems,
+
+\begin{eqnarray}
+	n_x = -1 \quad\quad\quad \text{at left}\\
+	n_x = 1 \quad\quad\quad \text{at right}
+\end{eqnarray}
+
+%Page 7 from copy
+
+	\begin{eqnarray}
+	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - \left[ wa \frac{du}{dx}\right]_0^L = 0
+    \end{eqnarray}
+	$\implies$
+	\begin{eqnarray}
+		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  + wa\frac{du}{dx}\biggr|_{x=L} - wa\frac{du}{dx}\biggr|_{x=0} = 0
+	\end{eqnarray}
+	since $n_x = -1 \text{at} x = 0 $ and $n_x = 1 \text{at} x = L$
+	\begin{eqnarray}
+		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - n_xwa\frac{du}{dx}\biggr|_{x=L} - n_xwa\frac{du}{dx}\biggr|_{x=0} = 0
+	\end{eqnarray}
+	\begin{eqnarray}
+	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  -(wQ)_0  -(wQ)_L = 0
+	\end{eqnarray}
+	
+	Finally we require that weight functions vanishes at boundaries where essential boundary conditions are specified.
+	\begin{eqnarray}
+		u(0) = u_0 \implies w(0) = 0
+	\end{eqnarray}
+Thus, we get
+	\begin{eqnarray}
+		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx   -w(L)Q_L = 0
+	\end{eqnarray}
 
 	
 \end{itemize}
@@ -184,3 +244,41 @@ We can rewrite the equations as
 
 Hence we get,
 
+\begin{eqnarray}
+	c_1^{e} = \frac{1}{h_e} (x_bu_1^e - x_bu_2^e)
+\end{eqnarray}
+\begin{eqnarray}
+	c_2^{e} = \frac{1}{h_e} (-u_1^e + u_2^e)
+\end{eqnarray}
+
+If we let,
+\begin{eqnarray*}
+	\alpha_1^e = x_b\\
+	\alpha_2^e = - x_a\\
+	\beta_1^e = -1 \\
+	\beta_2^e = 1	
+\end{eqnarray*}
+
+\begin{eqnarray}
+	c_1^{e} = \frac{1}{h_e} (\alpha_1^e u_1^e + \alpha_2^e u_2^e)
+\end{eqnarray}
+\begin{eqnarray}
+	c_2^{e} = \frac{1}{h_e} (\beta_1^eu_1^e + \beta_2^e u_2^e)
+\end{eqnarray}
+
+Hence,
+\begin{eqnarray*}
+	U_h^e(x) =  \frac{1}{h_e} [\alpha_1^e u_1^e + \alpha_2^e u_2^e + (\beta_1^eu_1^e + \beta_2^e u_2^e)x]
+\end{eqnarray*}
+\begin{eqnarray*}
+	U_h^e(x) =  \frac{1}{h_e} [\alpha_1^e + \beta_1^e x] u_1^e + \frac{1}{h_e} [\alpha_2^e + \beta_2^e x] u_2^e
+\end{eqnarray*}
+\begin{eqnarray}
+U_h^e(x) = \sum_{j=1}^{2} \frac{1}{h_e} [\alpha_j^e + \beta_j^e x] u_j^e 
+\end{eqnarray}
+
+\begin{eqnarray}
+	U_h^e(x) = \sum_{j=1}^{2} \psi_j^e(x) u_j^e 
+\end{eqnarray}
+
+where $\psi_j^e(x)$ are known as interpolation functions.

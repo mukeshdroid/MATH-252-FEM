@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  16 APR 2022 23:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  17 APR 2022 00:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -376,21 +376,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-[5]) [6] (./chapter3.tex
+[5] [6] [7]) [8] [9] (./chapter3.tex
 CHAPTER 3.
-) [7
+) [10
 
 ] (./chapter4.tex
 CHAPTER 4.
-) (./main.bbl [8
+) (./main.bbl [11
 
-]) [9
+]) [12
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  3194 strings out of 492623
  43226 string characters out of 6129060
- 118346 words of memory out of 5000000
+ 121346 words of memory out of 5000000
  7015 multiletter control sequences out of 15000+600000
  11531 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -405,10 +405,10 @@ cm/cmr8.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti12.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt12.pfb>
-Output written on main.pdf (15 pages, 205665 bytes).
+Output written on main.pdf (18 pages, 213136 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
