@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  17 APR 2022 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  17 APR 2022 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -159,6 +159,31 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
+(d:/programs/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count101
+\lst@gtempboxa=\box29
+\lst@token=\toks23
+\lst@length=\count102
+\lst@currlwidth=\dimen114
+\lst@column=\count103
+\lst@pos=\count104
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count105
+\lst@lineno=\count106
+\lst@maxwidth=\dimen117
+
+(d:/programs/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
+\lst@framebox=\box30
+)
+(d:/programs/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
 (d:/programs/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
@@ -172,55 +197,55 @@ Package ifvtex Info: VTeX not detected.
 (d:/programs/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count101
-\Gm@cntv=\count102
-\c@Gm@tempcnt=\count103
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks23
+\Gm@cnth=\count109
+\Gm@cntv=\count110
+\c@Gm@tempcnt=\count111
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks24
 )
-\c@df=\count104
-\c@exm=\count105
-\c@exe=\count106
-\c@prob=\count107
-\c@task=\count108
-\c@thm=\count109
+\c@df=\count112
+\c@exm=\count113
+\c@exe=\count114
+\c@prob=\count115
+\c@task=\count116
+\c@thm=\count117
 
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 (d:/programs/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen122
-\scratchbox=\box29
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen123
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count118
+\scratchdimen=\dimen126
+\scratchbox=\box31
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen127
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks26
 ) (d:/programs/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -268,6 +293,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count124
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -305,7 +332,7 @@ e
 <photos/kulogo.jpg, id=1, 307.90031pt x 312.41719pt>
 File: photos/kulogo.jpg Graphic file (type jpg)
 <use photos/kulogo.jpg>
-Package pdftex.def Info: photos/kulogo.jpg  used on input line 92.
+Package pdftex.def Info: photos/kulogo.jpg  used on input line 122.
 (pdftex.def)             Requested size: 128.03934pt x 128.03943pt.
 [1
 
@@ -394,39 +421,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-[6] [7] [8]) [9] [10] (./chapter3.tex
+[6] [7] [8] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+
+Overfull \hbox (10.97845pt too wide) in paragraph at lines 321--333
+ [][] 
+ []
+
+[11] (d:/programs/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+[12] [13]) [14] (./chapter3.tex
 CHAPTER 3.
-) [11
+) [15
 
 ] (./chapter4.tex
 CHAPTER 4.
-) (./main.bbl [12
-
-]) [13
+) (./main.bbl) [16
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3627 strings out of 492623
- 48156 string characters out of 6129060
- 130711 words of memory out of 5000000
- 7442 multiletter control sequences out of 15000+600000
+ 5431 strings out of 492623
+ 71445 string characters out of 6129060
+ 457376 words of memory out of 5000000
+ 9230 multiletter control sequences out of 15000+600000
  11531 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,35p,601b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,42p,601b,1657s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmex10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmmi12.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmmi8.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr12.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti12.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt12.pfb>
-Output written on main.pdf (19 pages, 215091 bytes).
+cm/cmr6.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti12.pfb><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt12.pfb>
+Output written on main.pdf (22 pages, 235213 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,18 +1,5 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: main.aux
-The style file: amsplain.bst
-Database file #1: bibtex_database/myrefs.bib
-Warning--string name "march" is undefined
---line 21 of file bibtex_database/myrefs.bib
-I was expecting a `,' or a `}'---line 69 of file bibtex_database/myrefs.bib
- : title = "Composition of Functions"
- :                                   .
-I'm skipping whatever remains of this entry
-You're missing a field part---line 84 of file bibtex_database/myrefs.bib
- : volume = 
- :          ''7'',
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 99 of file bibtex_database/myrefs.bib
- : year = "2012"
- :              .
-I'm skipping whatever remains of this entry
-(There were 3 error messages)
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[57] biber-MSWIN32:315> INFO - === 
+[969] Utils.pm:209> ERROR - Cannot find control file 'main.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[969] Biber.pm:114> INFO - ERRORS: 1

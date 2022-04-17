@@ -10,6 +10,10 @@
 \contentsline {section}{\numberline {1.5}\bf Limitations}{3}% 
 \contentsline {chapter}{\numberline {2}METHODOLOGY/MODEL EQUATION}{4}% 
 \contentsline {section}{\numberline {2.1}{\bf {Theoretical/Conceptual Framework}}}{4}% 
-\contentsline {chapter}{\numberline {3}RESULTS AND DISCUSSIONS}{11}% 
-\contentsline {section}{\numberline {3.1}{\bf {Result1}}}{11}% 
-\contentsline {chapter}{\numberline {4}CONCLUSIONS}{12}% 
+\contentsline {section}{\numberline {2.2}\bf Python Implementation}{11}% 
+\contentsline {subsection}{\numberline {2.2.1}Input/Output}{11}% 
+\contentsline {subsection}{\numberline {2.2.2}Element and Node classes}{12}% 
+\contentsline {subsection}{\numberline {2.2.3}Visualization}{13}% 
+\contentsline {chapter}{\numberline {3}RESULTS AND DISCUSSIONS}{15}% 
+\contentsline {section}{\numberline {3.1}{\bf {Result}}}{15}% 
+\contentsline {chapter}{\numberline {4}CONCLUSIONS}{16}% 
