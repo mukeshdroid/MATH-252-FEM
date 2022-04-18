@@ -1,1 +1,8 @@
-,gitignore
+.gitignore
+.pdf
+*.synctex.gz
+*.toc
+*.aux
+*.bbl
+*.blg
+*.log
