@@ -4,6 +4,24 @@
 
 \section{{\bf{Conceptual Framework - Truss}}}
     Truss is a structure consisting of organized objects in a shape of connecting triangles in such a way that it behaves as a single unit object. In order to enable the distribution of weight and grasp up the the fluctuating tension and compression without bending and shearing, it is made up of a web of triangles which is most stable form of geometry. In general, truss is used since it has a long life span and has least weight to the possible which in turn supports large loads and reduces deflections.\\
+    
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=0.4\linewidth , height=0.3\linewidth]{3}
+    	\caption{Truss in bridge}
+    \end{figure}
+%  
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=0.4\linewidth , height=0.3\linewidth]{2}
+    	\caption{Truss in roofing}
+    \end{figure}    
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=0.4\linewidth , height=0.3\linewidth]{5}
+    	\caption{Three Dimensional Truss}
+    \end{figure}
+    
 
 Commonly used in bridges, roofs and high rise buildings, it gives high value for mega constructions like the Eiffel Tower, construction of a stadium and all. We can think of truss as a beam where the web consists of series of separate members instead of a continuous plate. In engineering perspective, a truss is a structure that comprises of one or more triangular units constructed in a linear pattern such that its ends are connected to joints which is called as external nodes. The external forces and reaction to the forces are considered to act only at the nodes and the results in forces in the members are either tensile or compressive forces. In truss, the lower horizontal structure and the upper horizontal structure carry tension and compression. The diagonal and vertical structure form the truss web and it carries shear stress. Technically, they are also in tension and compression where the exact arrangement of forces depends on the type of truss and on the direction of bending. The structures serves in order to stabilize each other in order to prevent buckling. The structures that are under compression are to be designed to be safe against buckling. After knowing the force on each member, we determine the cross sectional area of the individual truss members. The weight of truss structure depends directly on its cross section area. The effect of weight of individual structures in a large truss is generally insignificant compared to the force exerted by external loads.\\
 
@@ -17,7 +35,7 @@ The strain-displacement relationship is: \\
 	\sigma = E\epsilon
 \end{eqnarray}
 
-From the law of equilibruim, we get,
+From the law of equilibrium, we get,
 \begin{eqnarray}
 	A\sigma_x = T = constant
 \end{eqnarray}
@@ -33,66 +51,50 @@ Differentiating with respect to x, we get,
 \end{eqnarray}
 is the equation of truss.
 
-%   \includegraphics{3}\\
-Fig:  Truss in bridge\\
-
-%   \includegraphics{2}\\
-Fig:  Truss in roofing\\
-
-%   \includegraphics{5}\\
-Fig: Three Dimensional Truss\\
-
-
-
-
+\pagebreak
 \section{\bf{Mathematical Model and solution methods}}
-{\bf\color{red}In this section, the author(s) should describe the theoretical/mathematical principles behind the whole work relative to the project. The information collected from literature review shall be relevant in this section.
-}
 %part assigned to samrajya
 
 Consider\\
 \begin{eqnarray}
-	-\frac{d}{dx} \left[a(x)\frac{du}{dx} \right] = f(x)  \quad\quad  \text{for} \quad\quad  0<x<L.\\
+	-\frac{d}{dx} \left[a(x)\frac{du}{dx} \right] = f(x)  \quad\quad  \text{for} \quad\quad  0<x<L.
 \end{eqnarray}
 for $u(x)$ subject to the boundary conditions\\
 \begin{eqnarray}
 	u(0)= u_0 \\
-	\vspace{1cm}
 	a(x)\frac{du}{dx}\biggr|_{x=L} = Q_L	
 \end{eqnarray}
 where $a(x)$ and $f(x)$ are known functions and 
 $u_0$ and $Q_L$ are known values.
-In case of bar (which is a axially loaded structure)\\
-
+In case of bar (which is a axially loaded structure) , the variables denote these quantities:
 \begin{eqnarray*}
 	u = \text{displacement}\\
 	a(x)= \text{EA (stiffness)}\\
 	f = \text{distributed axial force}\\
-	Q_L= \text{axial load}\\
+	Q_L= \text{axial load}
 \end{eqnarray*}
-
-Now, we want an approximation of u(x) in the form
-\begin{eqnarray}
+Our goal is to determine the function $u(x)$. Since analytic or exact solution is not feasible, we want an approximation of u(x) in the form
+\begin{eqnarray}\label{approxfunc}
 	u(x)\approx u_N(x) = \sum\limits_{j=1}^N c_j\phi_{j} + (x) +\phi_{0}(x)
 \end{eqnarray}
 
 %%page 2 of copy
 
- Substituting  $U_N$(x) in our Differential Equation,\\
- 
+ Substituting  $U_N$(x) in our Differential Equation, 
  \begin{eqnarray}
  	-\frac{d}{dx} \left[a(x)\frac{dU_N}{dx} \right] = f(x)  \quad\quad  \text{for} \quad\quad  0<x<L.
  \end{eqnarray}
 
-If this equally holds for all $x \in [0,L] $ the solution is exact. Since, we assume it only as an approximation.
-we define Residual Function $R(x,c_1, c_2, c_3,...,c_N)$ as
+If this equally holds for all $x \in [0,L] $ the solution is exact. Since, it is only an approximation , we define residual function $R(x,c_1, c_2, c_3,...,c_N)$ to check the how close the approximation is to our original problem.
 \begin{eqnarray}
 	R = -\frac{d}{dx} \left[a(x)\frac{dU_N}{dx} \right] - f(x)
 \end{eqnarray} 
 
-We have R $\neq$0 $ \forall x  \in [0, L]$  as a $U_N$ is only a approximation to solution.\\
+We have R $\neq$0 $ \forall x  \in [0, L]$  as $U_N$ is only a approximation to solution.
+\pagebreak
 
-Now we have various ways to minimize R in some senses over the domain to make this approximation close to the actual solution\\
+Now we have various ways to minimize R in some senses over the domain to make this approximation close to the actual solution. At this point all we want to do is to get N conditions to impose on the R in such a way that we obtain N linear equations in the unknown coefficients $c_1, c_2, c_3,...,c_N$.
+This is allow us to determine the coefficients in our approximation as in equation \ref{approxfunc}
 \begin{enumerate}
 	\item Collocation Method\\
 	It forces that R is zero at selected N points of the domain.\\
@@ -108,29 +110,31 @@ Now we have various ways to minimize R in some senses over the domain to make th
 	
 	\item Weighted Residual Method
 		we desire that 
-			\begin{eqnarray}
+			\begin{eqnarray}\label{weightedintegralgen}
 				\int_{0}^{L} w_i(x) R dx = 0 \quad\quad\quad \forall i = 1,2,...,N
 			\end{eqnarray}
 		where $w_i(x)$ are N linearly independent functions called weight functions.
+		
+		Choice of weight functions is totally arbitrary but there are some standard ways to choose the weight function which have been assigned special names. If we let $w_i = \phi_i$ , then the method is known as \textbf{galerkin's method.}
 \end{enumerate}
 
 %page 4
-	Now we convert our differential equation and boundary condition to weak form.\\
+	Now we convert our differential equation and boundary condition to weak form to make it easier to choose approximation functions.
 \begin{itemize}
-	\item Step 1 : \\
-	We write the weighted integral statement, i.e;\\
-	\begin{eqnarray}
+	\item Step 1 :
+	We write the weighted integral statement from eqn \ref{weightedintegralgen}, i.e;
+	\begin{eqnarray}\label{weightedint}
 		\int_{0}^{L}  w \left[ -\frac{d}{dx} \left( a(x)\frac{du}{dx} \right) - f \right] dx = 0
 	\end{eqnarray}
 
-	It is equivalent to differential equations and does not include any boundary conditions and thus the variable $u$ must be differentiable to as many order as is required by the differential equation.
-	\item Step 2\\
-	Weakening Differentiability conditions
+	It is equivalent to differential equations and does not include any boundary conditions and moreover the variable $u$ must be differentiable to as many order as is required by the differential equation.
+	\item Step 2:\\
+	to weaken differentiability conditions for $u(x)$, let us rewrite our eqn \ref{weightedint} as,
 	\begin{eqnarray}
 		\int_{0}^{L}  \left( w \left[ -\frac{d}{dx} \left( a(x)\frac{du}{dx} \right) \right] - wf \right)  dx = 0
 	\end{eqnarray}
 	Integrating by parts, we get,
-	\begin{eqnarray}
+	\begin{eqnarray}\label{weakform1}
 		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - \left[ wa \frac{du}{dx}\right]_0^L = 0
 	\end{eqnarray}
 
@@ -146,8 +150,9 @@ by considering,
 		v = -a\frac{du}{dx}
 	\end{eqnarray}
 
-we can see that now we require that w be differentiable at least once but this also made that u needs to be differentiable only once even though the equation is of second order.//
-Now, we take care of the boundary conditions which are of two types
+we can see that now we require that w be differentiable at least once but this also made that u needs to be differentiable only once even though the equation is of second order.\\
+    \item Step 3:\\
+    Now, we take care of the boundary conditions which are of two types
 \begin{itemize}
 	\item Natural Boundary  condition
 	\item Essential Boundary Condition 
@@ -155,24 +160,25 @@ Now, we take care of the boundary conditions which are of two types
 
 Before defining these conditions we define primary and secondary variables.
 
-\begin{df}{Primary Variable}
-	pass
-\end{df}
-\begin{df}{Secondary Variable}
-	pass
+\begin{df}[Primary Variable]
+	The coefficients of the weight function (and its derivatives) in the boundary expressions is called primary variable.
 \end{df}
 
-In our case , $ a \frac{du}{dx}$ is secondary variable.
+\begin{df}[Secondary Variable]
+	The dependent variable of the problem($u$), expressed in the same form as the weight function ($w$) appearing in the boundary tern is called primary variable.
+\end{df}
 
-If secondary variable(SV) is specified in the boundary, then such conditions are called natural boundary conditions (NBC).
-If primary variable(PV) is specified in the boundary, then such conditions are called essential boundary conditions (NBC).
+In our case , $u(x)$ is the primary variable and  $ a \frac{du}{dx}$ is secondary variable.
+
+If secondary variable(SV) is specified in the boundary, then such conditions are called \textbf{natural boundary conditions} (NBC).
+If primary variable(PV) is specified in the boundary, then such conditions are called \textbf{essential boundary conditions} (NBC).
 
 let us now define secondary variable as Q.
 \begin{eqnarray}
 	Q = a\frac{du}{dx} n_x
 \end{eqnarray}
 
-where $n_x$ is ???
+where $n_x$ is the cosine of the cosine of the angle between the positive x-axis and the normal to the boundary.
 
 For 1D problems,
 
@@ -182,23 +188,23 @@ For 1D problems,
 \end{eqnarray}
 
 %Page 7 from copy
-
+	To utilize these new facts , we use the equation \ref{weakform1}
 	\begin{eqnarray}
 	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - \left[ wa \frac{du}{dx}\right]_0^L = 0
     \end{eqnarray}
-	$\implies$
+
 	\begin{eqnarray}
-		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  + wa\frac{du}{dx}\biggr|_{x=L} - wa\frac{du}{dx}\biggr|_{x=0} = 0
+	\implies	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  + wa\frac{du}{dx}\biggr|_{x=L} - wa\frac{du}{dx}\biggr|_{x=0} = 0
 	\end{eqnarray}
-	since $n_x = -1 \text{at} x = 0 $ and $n_x = 1 \text{at} x = L$
+	since $n_x = -1 \quad \text{at} \quad x = 0 $ and $n_x = 1 \quad \text{at} \quad x = L$
 	\begin{eqnarray}
-		\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - n_xwa\frac{du}{dx}\biggr|_{x=L} - n_xwa\frac{du}{dx}\biggr|_{x=0} = 0
+	\implies	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - n_xwa\frac{du}{dx}\biggr|_{x=L} - n_xwa\frac{du}{dx}\biggr|_{x=0} = 0
 	\end{eqnarray}
 	\begin{eqnarray}
-	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  -(wQ)_0  -(wQ)_L = 0
+	\implies \int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  -(wQ)_0  -(wQ)_L = 0
 	\end{eqnarray}
-	
-	Finally we require that weight functions vanishes at boundaries where essential boundary conditions are specified.
+	Weight functions can be interpreted as virtual change of the primary variable ($ w \approx \delta u $)
+	thus we require that weight functions vanishes at boundaries where essential boundary conditions are specified as at such points the value of u is known exactly.
 	\begin{eqnarray}
 		u(0) = u_0 \implies w(0) = 0
 	\end{eqnarray}
@@ -210,7 +216,7 @@ Thus, we get
 	
 \end{itemize}
 %part after assigning to samrajya
-
+Let us define two functionals $B$ and $l$ as,
 \begin{eqnarray}
 	B(w,u) = \int_{0}^{L} a \frac{dw}{dx} \frac{du}{dx} dx \\
 	l(w) = \int_{0}^{L} wf dx + w(L) Q_L
