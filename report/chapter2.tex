@@ -74,7 +74,7 @@ In case of bar (which is a axially loaded structure) , the variables denote thes
 	Q_L= \text{axial load}
 \end{eqnarray*}
 Our goal is to determine the function $u(x)$. Since analytic or exact solution is not feasible, we want an approximation of u(x) in the form
-\begin{eqnarray}\label{approxfunc}
+\begin{eqnarray}\label{approxfunc}\label{approxsoln}
 	u(x)\approx u_N(x) = \sum\limits_{j=1}^N c_j\phi_{j} + (x) +\phi_{0}(x)
 \end{eqnarray}
 
@@ -123,7 +123,7 @@ This is allow us to determine the coefficients in our approximation as in equati
 \begin{itemize}
 	\item Step 1 :
 	We write the weighted integral statement from eqn \ref{weightedintegralgen}, i.e;
-	\begin{eqnarray}\label{weightedint}
+	\begin{eqnarray}\label{weightedint}\label{weightedintform}
 		\int_{0}^{L}  w \left[ -\frac{d}{dx} \left( a(x)\frac{du}{dx} \right) - f \right] dx = 0
 	\end{eqnarray}
 
@@ -200,7 +200,7 @@ For 1D problems,
 	\begin{eqnarray}
 	\implies	\int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  - n_xwa\frac{du}{dx}\biggr|_{x=L} - n_xwa\frac{du}{dx}\biggr|_{x=0} = 0
 	\end{eqnarray}
-	\begin{eqnarray}
+	\begin{eqnarray}\label{expandedweak}
 	\implies \int_{0}^{L} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  -(wQ)_0  -(wQ)_L = 0
 	\end{eqnarray}
 	Weight functions can be interpreted as virtual change of the primary variable ($ w \approx \delta u $)
@@ -228,14 +228,90 @@ Hence, our weak form can be written as
 	0 = B(w,u) - l(w)
 \end{eqnarray}
 or ,
-\begin{eqnarray}
+\begin{eqnarray}\label{variational}
 	B(w,u) = l(w)
 \end{eqnarray}
 
 This is the variational form of the problem that is associated with our ODE and its boundary conditions.
 
 When the differential equation is linear and of even order, the resulting weak form will have symmetric bi-linear form in u and w.
- 	
+
+We will now use ritz-galerkin , we will obtain the linear equations to obtain the coefficients which we used to define the \ref{approxfunc} by using the above vairational form.
+
+for Ritz method , we substitute $w_i = \phi_i$ hence eqn \ref{variational} becomes
+
+\begin{eqnarray}
+	B \left(\phi_i, \sum_{1}^{N} c_j \phi_j + \phi_0 \right) = l(\phi_i)  \quad\quad\quad i = 1,2,...,N
+\end{eqnarray}
+
+Since $B(\cdot , \cdot ) $ is bilinear , it is linear in u. hence,
+
+\begin{eqnarray} \label{linearBl}
+	\sum_{1}^{N} B \left(\phi_i, \phi_j \right)  c_j  = l(\phi_i) -  B \left(\phi_i, \phi_0 \right)  \quad\quad\quad i = 1,2,...,N
+\end{eqnarray}
+
+Let , 
+\begin{eqnarray}\label{gencoeff}
+	K_{ij} = B(\phi_i , \phi_j) \\
+	F_i = l(\phi_i) - B(\phi_i , \phi_0)
+\end{eqnarray}
+
+Then eqn \ref{linearBl} can be written in matrix form as
+\begin{eqnarray}
+	\boldmath{K} c = \boldmath{F}
+\end{eqnarray}
+
+Since $K$ and $f$ are completely determined ,we can easily compute the coefficients.
+
+The last hurdle towards writing down the approximate solution exactly is choosing the approximate functions $\phi_i$ appropriately.
+
+Firstly we must make sure that these functions satisfy the essential boundary conditions. Since, the natural boundary conditions are already included in the weak form, this is the last step to properly apply all the given boundary conditions.
+
+We can demand that
+\begin{eqnarray}
+	\phi_0(x_0) = u_0\\
+	\sum_{1}^{N} c_j \phi_j(x_0) = 0
+\end{eqnarray} 
+
+We will obtain 
+\begin{eqnarray}
+	U_N(x_0) = u_0
+\end{eqnarray}
+and hence the essential boundary conditions are satisfied.
+ 
+It is obvious that these functions must be as differentiable and integrable as the weak form demands. In addition, we want these to be complete set of \textbf{linearly independent functions}.
+
+\textbf{Thus variational method provides us with a powerful method yo solve equations. provided we can compute the integrals in case of complex geometry as the discusiion encompasses the entire domainpof the problem at once. Now }
+
+Thus, we discritize our domain into line elements. A typical element between points A and B with coordinates $x_a$ and $x_b$ respectively, is denoted $\Omega_e$. The length of element is $h_e = x_b - x_a$. 
+
+Now we follow the above steps to obtain the approximate solution ($u_h^e$) over this element.
+The approimate solution is assumed to be opf the form 
+\begin{eqnarray}
+	u_h^e = \sum_{j = 0 }^{N} u_j^e \psi_j^e(x)
+\end{eqnarray} 
+Here $ u_j^e$ and $\psi_j^e(x)$ are the coefficients and the approximation functions respectively. 
+
+Writing eqn \ref{weightedintform} for our element's domain,
+\begin{eqnarray}
+			\int_{x_a}^{x_b}  w \left[ -\frac{d}{dx} \left( a(x)\frac{du}{dx} \right) - f \right] dx = 0
+\end{eqnarray}
+
+Similarly, the final weak form can be written from eqn \ref{expandedweak} as 
+
+\begin{eqnarray}
+	 \int_{x_a}^{x_b} \left[ a \frac{dw}{dx} \frac{du}{dx} - wf \right] dx  -(wQ)_a  -(wQ)_b = 0
+\end{eqnarray}
+
+let us also write the corresponding variational form,
+\begin{eqnarray}\label{variational}
+	B^e(w,u) = l^e(w)
+\end{eqnarray}
+where,
+\begin{eqnarray}
+	B^e(w,u) = \int_{x_a}^{x_b} a \frac{dw}{dx} \frac{du}{dx} dx \\
+	l^e(w) = \int_{x_a}^{x_b} wf dx + w(x_a) Q_a + w(x_b) Q_b
+\end{eqnarray}
 
 % Choosing approximate functions
 
@@ -331,7 +407,153 @@ U_h^e(x) = \sum_{j=1}^{2} \frac{1}{h_e} [\alpha_j^e + \beta_j^e x] u_j^e
 	U_h^e(x) = \sum_{j=1}^{2} \psi_j^e(x) u_j^e 
 \end{eqnarray}
 
-where $\psi_j^e(x)$ are known as interpolation functions.
+where $\psi_j^e(x)$ are known as interpolation functions. It can be seen that $\psi_j^e(x)$ are simply Lagrange interpolation functions and can be written quite succinctly as,
+\begin{eqnarray}\label{locallagrange}
+	\psi_1^e(\bar{x}) = 1 - \frac{\bar{x}}{h_e} , \quad\quad \psi_2^e(\bar{x}) = \frac{\bar{x}}{h_e}
+\end{eqnarray}
+where $\bar{x} = x - x_a$
+
+From eqn \ref{gencoeff} we obtain
+\begin{eqnarray}
+	K_{ij}^e = B(\psi_i^e , \psi_j^e) = \int_{x_a}^{x_b} a_e \frac{d\psi_j^e}{dx} \frac{d\psi_i^e}{dx} dx \\
+	F_i^e = l(\psi_i^e) = \int_{x_a}^{x_b} f\psi_i^e dx
+\end{eqnarray}
+
+Taking local coordinate $\bar{x}$,
+\begin{eqnarray}
+	K_{ij}^e =  \int_{0}^{h_e} aE \frac{d\psi_j^e}{d\bar{x}} \frac{d\psi_i^e}{d\bar{x}} d\bar{x} \\
+	F_i^e= \int_{0}^{h_e} f\psi_i^e d\bar{x}
+\end{eqnarray}
+
+subsituting eqn \ref{locallagrange} , 
+\begin{eqnarray}
+	K_{11}^e =  \int_{0}^{h_e} a_e \left( - \frac{1}{h_e}\right) \left( - \frac{1}{h_e}\right) d\bar{x} \\
+	\implies K_{11}^e = \frac{a_e}{h_e}
+\end{eqnarray}
+
+similarly,
+\begin{eqnarray}
+	 K_{12}^e = K_{21}^e = -\frac{a_e}{h_e}\\
+	 K_{22}^e = \frac{a_e}{h_e}
+\end{eqnarray}
+
+we can also assume constant $f_e$ to obtain ,
+\begin{eqnarray}
+	f_{1}^e = 	f_{2}^e = \frac{f_e h_e}{2}
+\end{eqnarray}
+
+Hence,
+\begin{eqnarray}
+	[K^e] = \frac{a_e}{h_e}
+	\begin{bmatrix}
+		1 & -1\\
+		-1 & 1
+	\end{bmatrix},\quad\quad\quad
+	[f^e] = \frac{f_e h_e}{2}
+\begin{bmatrix}
+	1 \\
+	1
+\end{bmatrix}
+\end{eqnarray}
+
+Summarizing we have obtained the following system,
+\begin{eqnarray}\label{system1}
+	\frac{a_e}{h_e}
+	\begin{bmatrix}
+		1 & -1\\
+		-1 & 1
+	\end{bmatrix}
+\begin{bmatrix}
+	u_1^e \\
+	u_2^e
+\end{bmatrix}
+ = \frac{f_e h_e}{2}
+\begin{bmatrix}
+	1 \\
+	1
+\end{bmatrix} + 
+\begin{bmatrix}
+	Q_1^e \\
+	Q_2^e
+\end{bmatrix}
+\end{eqnarray}
+
+The above linear system, cannot be solved for each element as it has more variables than there are equations. Thus, we will now combine back our elements to obtain the entire problem domain.
+
+We will be putting additional constraints that $u(x)$ is continuous and source terms are balanced.
+
+Mathematically, If node i of $\Omega_a$ , node j of $\Omega_b$ and  node k of $\Omega_c$ , then 
+\begin{eqnarray}
+	u_i^a = u_j^b = u_k^c\\
+	Q_i^a + Q_j^b + Q_k^c = Q_I
+\end{eqnarray}
+where , $Q_I$ is externally applied point source
+
+The correspodning matrices of each eleemt must also be added to ensure consistency when externalpoint source are added.
+For example,
+In the figure below,
+\begin{eqnarray}
+	u_1^1 = U_1 , \quad	u_2^1 = u_1^2 =  U_2,  \dots 	u_2^i = u_1^{i+1} =  U_i , \dots u_2^N = U_{N+1}
+\end{eqnarray}
+\begin{eqnarray}
+	Q_2^i + Q_1^{i+1} = 0 \quad \text{if no external point source is applied.}\\ \text{otherwise} \quad
+	Q_2^i + Q_1^{i+1} = Q_I 
+\end{eqnarray}
+
+where $Q_I$ is the magnitude of the external point source applied.
+
+Adding eqn \ref{system1} for sucessive elements, we get
+
+
+\begin{eqnarray*}
+\begin{bmatrix}
+		K_{11}^1 & K_{12}^1 & 0 & \dots & 0 & 0 \\
+		K_{21}^1 & K_{22}^1 + K_{11}^2 & K_{12}^2 & \dots & 0 & 0 \\
+		0 & K_{21}^2 & K_{22}^2 + K_{11}^3 & \dots& 0 & 0 \\
+		\vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+		0 &0 & 0 & \dots & K_{22}^{N-1} + K_{22}^N & K_{12}^N \\
+		0 & 0 & 0 & \dots & K_{21}^N & K_{22}^N \\
+\end{bmatrix}
+\begin{bmatrix}
+	U_1 \\
+	U_2 \\
+	U_3 \\
+	\vdots \\
+	U_{N-1} \\
+	U_N
+\end{bmatrix}\\=
+\begin{bmatrix}
+	f_1^1 \\
+	f_2^1 + f_1^2\\
+	f_2^2 + f_1^3\\
+	\vdots \\
+	f_2^{N-1} + f_1^N \\
+	f_2^N
+\end{bmatrix} +
+\begin{bmatrix}
+	Q_1^1 \\
+	Q_2^1 + Q_1^2\\
+	Q_2^2 + Q_1^3\\
+	\vdots \\
+	Q_2^{N-1} + Q_1^N \\
+	Q_2^N
+\end{bmatrix} 
+\end{eqnarray*}
+
+Now we can impose the boundary conditions on the by providing the values of $U_i$ and $Q_i$ and solve the equation to obtain the solution at the nodal values.
+
+The final solution can be written as
+\[ u(x) = \begin{cases} 
+	u_h^1(x) = \sum_{j=1}^{n} u_j^1 \psi_j^1(x)& x \in \Omega^1 \\
+	u_h^2(x) = \sum_{j=1}^{n} u_j^2 \psi_j^2(x)& x \in \Omega^1 \\
+	\vdots\\
+	u_h^N(x) = \sum_{j=1}^{n} u_j^N \psi_j^N(x)& x \in \Omega^1 \\
+\end{cases}
+\]
+
+
+
+
 
 \pagebreak
 
