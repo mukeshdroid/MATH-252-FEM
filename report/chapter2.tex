@@ -746,6 +746,33 @@ The values that are unknown and thus to be computed will be denoted by nan and a
 	\label{element_csv_table}
 \end{table}
 
+An sample of output csv file generated is as follows
+\begin{table}[]
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		num & pos\_x & pos\_y & dis\_x             & dis\_y               & f\_x    & f\_y    \\
+		\hline
+		1   & 0.0    & 0.0    & 0.0                & 0.0                  & 0.0     & 0.0     \\
+		2   & 2.0    & 0.0    & 0.0                & 0.0                  & 0.0     & 0.0     \\
+		3   & 4.0    & 0.0    & 0.0                & 0.0                  & 0.0     & 0.0\\     
+		6   & 8.0    & 2.918  & 1.2484 & -0.60462   & 0.2     & -0.1    \\
+		7   & 6.0    & 2.1838 & 0.70085 & -0.21838  & 0.0     & -0.1    \\
+		\hline
+
+		num & length & area   & ym                 & theta                & node\_a & node\_b \\
+		\hline
+	
+		1   & 2.0    & 1.0    & 1.0                & 0.0                  & 1       & 2       \\
+	
+		2   & 2.0    & 1.0    & 1.0                & 0.0                  & 2       & 3       \\
+
+		14  & 2.1838 & 1.0    & 1.0                & 1.5707963267948966   & 4       & 7       \\
+		
+		15  & 3.5325 & 1.0    & 1.0                & 0.9773840320509742   & 4       & 6 \\ 
+		\hline    
+	\end{tabular}
+\end{table}
+
 
 Table \ref{element_csv_table} shows the input format of the elements where each row represents an element and its attributes: element number, length , cross-section area , young's modulus , angle with the global x-axis and the nodes that it connects. We can use this table to supply material properties and specify the problem geometry.
 

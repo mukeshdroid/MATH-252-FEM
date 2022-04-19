@@ -1,7 +1,7 @@
 \contentsline {chapter}{\bf CERTIFICATION}{ii}% 
 \contentsline {chapter}{\bf ACKNOWLEDGEMENTS}{iii}% 
-\contentsline {chapter}{LIST OF FIGURES}{vi}% 
-\contentsline {chapter}{LIST OF TABLES}{vii}% 
+\contentsline {chapter}{LIST OF FIGURES}{v}% 
+\contentsline {chapter}{LIST OF TABLES}{vi}% 
 \contentsline {chapter}{\numberline {1}MOTIVATION/INTRODUCTION}{1}% 
 \contentsline {section}{\numberline {1.1}{\bf {Context/Rationale/Background}}}{1}% 
 \contentsline {section}{\numberline {1.2}\bf {History}}{1}% 
@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.3}\bf Python Implementation}{21}% 
 \contentsline {subsection}{\numberline {2.3.1}Input/Output}{21}% 
 \contentsline {subsection}{\numberline {2.3.2}Element and Node classes}{22}% 
-\contentsline {subsection}{\numberline {2.3.3}Visualization}{23}% 
+\contentsline {subsection}{\numberline {2.3.3}Visualization}{24}% 
 \contentsline {chapter}{\numberline {3}RESULTS AND DISCUSSIONS}{25}% 
 \contentsline {section}{\numberline {3.1}{\bf {Result}}}{25}% 
 \contentsline {chapter}{\numberline {4}CONCLUSIONS}{29}% 

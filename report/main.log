@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  19 APR 2022 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.26)  19 APR 2022 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,33 +351,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
  []
 
 ) [3] (./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 (d:/programs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
 (d:/programs/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4
-
-])
+))
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [5]
+ [4
+
+]
 (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [6
+ [5
 
 ] (./main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [7
+ [6
 
 ] (./chapter1.tex
 CHAPTER 1.
@@ -396,17 +396,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-<./figures/3.jpeg, id=37, 406.51875pt x 271.0125pt>
+<./figures/3.jpeg, id=34, 406.51875pt x 271.0125pt>
 File: ./figures/3.jpeg Graphic file (type jpg)
 <use ./figures/3.jpeg>
 Package pdftex.def Info: ./figures/3.jpeg  used on input line 10.
 (pdftex.def)             Requested size: 182.09433pt x 136.57695pt.
-<./figures/2.jpg, id=38, 331.2375pt x 247.92625pt>
+<./figures/2.jpg, id=35, 331.2375pt x 247.92625pt>
 File: ./figures/2.jpg Graphic file (type jpg)
 <use ./figures/2.jpg>
 Package pdftex.def Info: ./figures/2.jpg  used on input line 16.
 (pdftex.def)             Requested size: 182.09526pt x 136.57549pt.
-<./figures/5.jpg, id=39, 481.8pt x 271.0125pt>
+<./figures/5.jpg, id=36, 481.8pt x 271.0125pt>
 File: ./figures/5.jpg Graphic file (type jpg)
 <use ./figures/5.jpg>
 Package pdftex.def Info: ./figures/5.jpg  used on input line 21.
@@ -472,7 +472,7 @@ LaTeX Font Warning: Command \mathversion invalid in math mode on input line 261
 .
 
 [11] [12] [13]
-<./figures/T6.jpg, id=79, 1987.425pt x 899.36pt>
+<./figures/T6.jpg, id=76, 1987.425pt x 899.36pt>
 File: ./figures/T6.jpg Graphic file (type jpg)
 <use ./figures/T6.jpg>
 Package pdftex.def Info: ./figures/T6.jpg  used on input line 411.
@@ -481,7 +481,7 @@ Package pdftex.def Info: ./figures/T6.jpg  used on input line 411.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/T4.jpg, id=80, 1690.315pt x 1260.71pt>
+<./figures/T4.jpg, id=77, 1690.315pt x 1260.71pt>
 File: ./figures/T4.jpg Graphic file (type jpg)
 <use ./figures/T4.jpg>
 Package pdftex.def Info: ./figures/T4.jpg  used on input line 419.
@@ -490,12 +490,12 @@ Package pdftex.def Info: ./figures/T4.jpg  used on input line 419.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14] [15 <./figures/T6.jpg> <./figures/T4.jpg>]
-<./figures/T7.jpg, id=87, 3481.005pt x 1513.655pt>
+<./figures/T7.jpg, id=84, 3481.005pt x 1513.655pt>
 File: ./figures/T7.jpg Graphic file (type jpg)
 <use ./figures/T7.jpg>
 Package pdftex.def Info: ./figures/T7.jpg  used on input line 506.
 (pdftex.def)             Requested size: 409.6821pt x 182.0927pt.
-<./figures/T5.jpg, id=88, 2806.485pt x 614.295pt>
+<./figures/T5.jpg, id=85, 2806.485pt x 614.295pt>
 File: ./figures/T5.jpg Graphic file (type jpg)
 <use ./figures/T5.jpg>
 Package pdftex.def Info: ./figures/T5.jpg  used on input line 514.
@@ -505,7 +505,7 @@ Package pdftex.def Info: ./figures/T5.jpg  used on input line 514.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./figures/T7.jpg>]
-<./figures/T9.jpg, id=92, 3456.915pt x 1473.505pt>
+<./figures/T9.jpg, id=89, 3456.915pt x 1473.505pt>
 File: ./figures/T9.jpg Graphic file (type jpg)
 <use ./figures/T9.jpg>
 Package pdftex.def Info: ./figures/T9.jpg  used on input line 565.
@@ -515,7 +515,7 @@ Package pdftex.def Info: ./figures/T9.jpg  used on input line 565.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17 <./figures/T5.jpg>]
-<./figures/T3.jpg, id=97, 1618.045pt x 1035.87pt>
+<./figures/T3.jpg, id=94, 1618.045pt x 1035.87pt>
 File: ./figures/T3.jpg Graphic file (type jpg)
 <use ./figures/T3.jpg>
 Package pdftex.def Info: ./figures/T3.jpg  used on input line 621.
@@ -542,6 +542,10 @@ Overfull \hbox (10.97845pt too wide) in paragraph at lines 733--745
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 750.
+
 [21] (d:/programs/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
@@ -552,12 +556,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-<./figures/truss.png, id=123, 1036.47224pt x 483.60675pt>
+<./figures/truss.png, id=119, 1036.47224pt x 483.60675pt>
 File: ./figures/truss.png Graphic file (type png)
 <use ./figures/truss.png>
 Package pdftex.def Info: ./figures/truss.png  used on input line 11.
 (pdftex.def)             Requested size: 364.19409pt x 227.62726pt.
-<./figures/before.png, id=125, 978.65625pt x 447.47176pt>
+<./figures/before.png, id=121, 978.65625pt x 447.47176pt>
 File: ./figures/before.png Graphic file (type png)
 <use ./figures/before.png>
 Package pdftex.def Info: ./figures/before.png  used on input line 20.
@@ -565,7 +569,7 @@ Package pdftex.def Info: ./figures/before.png  used on input line 20.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/after.png, id=126, 977.45175pt x 452.28975pt>
+<./figures/after.png, id=122, 977.45175pt x 452.28975pt>
 File: ./figures/after.png Graphic file (type png)
 <use ./figures/after.png>
 Package pdftex.def Info: ./figures/after.png  used on input line 27.
@@ -576,7 +580,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [25
 
  <./figures/truss.png>]
-<./figures/frame.png, id=131, 699.8145pt x 573.342pt>
+<./figures/frame.png, id=128, 699.8145pt x 573.342pt>
 File: ./figures/frame.png Graphic file (type png)
 <use ./figures/frame.png>
 Package pdftex.def Info: ./figures/frame.png  used on input line 43.
@@ -618,11 +622,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5525 strings out of 492623
  73033 string characters out of 6129060
- 441200 words of memory out of 5000000
+ 444480 words of memory out of 5000000
  9305 multiletter control sequences out of 15000+600000
  10925 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,42p,1525b,1657s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,42p,1525b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
 b><d:/programs/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
@@ -635,10 +639,10 @@ rograms/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/p
 rograms/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/pr
 ograms/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><d:/pr
 ograms/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (38 pages, 1200575 bytes).
+Output written on main.pdf (37 pages, 1201020 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 193 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
