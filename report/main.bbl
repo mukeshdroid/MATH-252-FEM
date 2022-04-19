@@ -1,0 +1,42 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{banakh2022oscillations}
+Ludmila Banakh, \emph{Oscillations properties of the dynamic fractal
+  structures}, Journal of Sound and Vibration \textbf{520} (2022), 116541.
+
+\bibitem{bandela2020finite}
+Vinod Bandela and Saraswathi Kanaparthi, \emph{Finite element analysis and its
+  applications in dentistry}, Finite Element Methods and Their Applications,
+  IntechOpen London, UK, 2020.
+
+\bibitem{courant1943variational}
+Richard Courant, \emph{Variational methods for the solution of problems of
+  equilibrium and vibrations}, Bulletin of the American mathematical Society
+  \textbf{49} (1943), no.~1, 1--23.
+
+\bibitem{hrennikoff1941solution}
+Alexander Hrennikoff, \emph{Solution of problems of elasticity by the framework
+  method},  (1941).
+
+\bibitem{stein2009olgierd}
+Erwin Stein, \emph{Olgierd c. zienkiewicz, a pioneer in the development of the
+  finite element method in engineering science}, Steel Construction: Design and
+  Research \textbf{2} (2009), no.~4, 264--272.
+
+\bibitem{strang1973analysis}
+Gilbert Strang and George~J Fix, \emph{An analysis of the finite element
+  method(book- an analysis of the finite element method.)}, Englewood Cliffs,
+  N. J., Prentice-Hall, Inc., 1973. 318 p (1973).
+
+\bibitem{zienkiewicz2005finite}
+Olek~C Zienkiewicz, Robert~L Taylor, and Jian~Z Zhu, \emph{The finite element
+  method: its basis and fundamentals}, Elsevier, 2005.
+
+\end{thebibliography}

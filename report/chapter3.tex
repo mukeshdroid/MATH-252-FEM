@@ -2,14 +2,53 @@
 \chapter{RESULTS AND DISCUSSIONS}
 
 \section{{\bf{Result}}}
-{\bf\color{red}In this chapter, the author(s) shall present the results and simulations (in the form of numerical data or graphical form) of the theory described in CHAPTER-2 and finally discuss the results.
-}
 
-For the purpose and verification by a concrete example and demonstration of potential application of the method, we designed a custom truss and studied its deformations under the prescribed forces . These forces and the overall structure of truss is as below.
+For the purpose and verification by a concrete example and demonstration of potential application of the method, we designed a custom truss and studied its deformations under the prescribed forces . These forces and the overall structure of truss is as below.\\
+\noindent
 
-%Image of truss
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth , height=0.2\linewidth]{Drawing1.pdf}
+	\caption{Truss}
+\end{figure}
+
+\noindent
+
+Implementing the problem in python gave the following structure after deformation.\\
+
+%ss from jupyter notebook.   
 
 
+We also verified our solution in Frame3dd. Frame3dd is a free open-source software for static and dynamic structural analysis of 2D and 3D frames and trusses with elastic and geometric stiffness.\\
+
+After verification in the software, the following structure was obtained.\\
+
+%ss from fram3dd
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+	      Results in python & Results in frame3dd & Percentage error   \\
+		\hline
+	
+	      12.48407187  &12.1552098     &2.63          \\
+	     -6.04631381   &-6.03649343    &0.164          \\
+	      7.00856832   & 6.66504758    &4.901         \\
+	     -2.1838       &-2.11534409    &3.13         \\
+	      2.35025907   & 2.16352748    &7.95         \\
+	     -0.56650909   &-0.59822723    &5.6         \\
+          1.33696724   & 1.08932533    &18.52        \\
+         -0.7279       &-0.68431346    &5.99          \\
+        
+		\hline  
+	\end{tabular}
+		\caption{Comparision of results obtained in python to that in frame3dd for displacement.}
+\label{Comparision_table}
+\end{table}
+
+Table \ref{Comparision_table} shows the percentage error in each node for displacement. Going from left to right we get  displacement a as obtained in python, displacement as obtained in frame3dd and percentage error in each displacement.\\
+
+The average percentage error in displacement is 3.76.\\
 
 
 
