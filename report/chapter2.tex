@@ -281,12 +281,10 @@ and hence the essential boundary conditions are satisfied.
  
 It is obvious that these functions must be as differentiable and integrable as the weak form demands. In addition, we want these to be complete set of \textbf{linearly independent functions}.
 
-\textbf{Thus variational method provides us with a powerful method yo solve equations. provided we can compute the integrals in case of complex geometry as the discusiion encompasses the entire domainpof the problem at once. Now }
-
-Thus, we discritize our domain into line elements. A typical element between points A and B with coordinates $x_a$ and $x_b$ respectively, is denoted $\Omega_e$. The length of element is $h_e = x_b - x_a$. 
+Thus variational method provides us with a powerful method to solve equations. provided we can compute the integrals in case of complex geometry as the discussion encompasses the entire domain of the problem at once. Since, this is not always possible for complex geometry or material property, we discritize our domain into line elements. A typical element between points A and B with coordinates $x_a$ and $x_b$ respectively, is denoted $\Omega_e$. The length of element is $h_e = x_b - x_a$. 
 
 Now we follow the above steps to obtain the approximate solution ($u_h^e$) over this element.
-The approimate solution is assumed to be opf the form 
+The approximate solution is assumed to be opf the form 
 \begin{eqnarray}
 	u_h^e = \sum_{j = 0 }^{N} u_j^e \psi_j^e(x)
 \end{eqnarray} 
@@ -408,9 +406,19 @@ U_h^e(x) = \sum_{j=1}^{2} \frac{1}{h_e} [\alpha_j^e + \beta_j^e x] u_j^e
 \end{eqnarray}
 
 where $\psi_j^e(x)$ are known as interpolation functions. It can be seen that $\psi_j^e(x)$ are simply Lagrange interpolation functions and can be written quite succinctly as,
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth , height=0.4\linewidth]{T6}
+	\caption{Linear Lagrange Interpolation Functions}
+\end{figure}
 \begin{eqnarray}\label{locallagrange}
 	\psi_1^e(\bar{x}) = 1 - \frac{\bar{x}}{h_e} , \quad\quad \psi_2^e(\bar{x}) = \frac{\bar{x}}{h_e}
 \end{eqnarray}
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth , height=0.4\linewidth]{T4}
+	\caption{Local Coordinate system for elements}
+\end{figure}
 where $\bar{x} = x - x_a$
 
 From eqn \ref{gencoeff} we obtain
@@ -443,7 +451,7 @@ we can also assume constant $f_e$ to obtain ,
 \end{eqnarray}
 
 Hence,
-\begin{eqnarray}
+\begin{eqnarray}\label{stiffness}
 	[K^e] = \frac{a_e}{h_e}
 	\begin{bmatrix}
 		1 & -1\\
@@ -478,6 +486,7 @@ Summarizing we have obtained the following system,
 \end{bmatrix}
 \end{eqnarray}
 
+
 The above linear system, cannot be solved for each element as it has more variables than there are equations. Thus, we will now combine back our elements to obtain the entire problem domain.
 
 We will be putting additional constraints that $u(x)$ is continuous and source terms are balanced.
@@ -489,12 +498,22 @@ Mathematically, If node i of $\Omega_a$ , node j of $\Omega_b$ and  node k of $\
 \end{eqnarray}
 where , $Q_I$ is externally applied point source
 
-The correspodning matrices of each eleemt must also be added to ensure consistency when externalpoint source are added.
+The corresponding matrices of each element must also be added to ensure consistency when external point source are added.
 For example,
 In the figure below,
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth , height=0.4\linewidth]{T7}
+	\caption{Example of basic Assembly of elements}
+\end{figure}
 \begin{eqnarray}
 	u_1^1 = U_1 , \quad	u_2^1 = u_1^2 =  U_2,  \dots 	u_2^i = u_1^{i+1} =  U_i , \dots u_2^N = U_{N+1}
 \end{eqnarray}
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth , height=0.4\linewidth]{T5}
+	\caption{Assembly process for Secondary Variables}
+\end{figure}
 \begin{eqnarray}
 	Q_2^i + Q_1^{i+1} = 0 \quad \text{if no external point source is applied.}\\ \text{otherwise} \quad
 	Q_2^i + Q_1^{i+1} = Q_I 
@@ -541,22 +560,143 @@ Adding eqn \ref{system1} for sucessive elements, we get
 \end{eqnarray*}
 
 Now we can impose the boundary conditions on the by providing the values of $U_i$ and $Q_i$ and solve the equation to obtain the solution at the nodal values.
-
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth , height=0.35\linewidth]{T9}
+	\caption{Obtaining Global solution from element solutions}
+\end{figure}
 The final solution can be written as
 \[ u(x) = \begin{cases} 
 	u_h^1(x) = \sum_{j=1}^{n} u_j^1 \psi_j^1(x)& x \in \Omega^1 \\
-	u_h^2(x) = \sum_{j=1}^{n} u_j^2 \psi_j^2(x)& x \in \Omega^1 \\
+	u_h^2(x) = \sum_{j=1}^{n} u_j^2 \psi_j^2(x)& x \in \Omega^2 \\
 	\vdots\\
-	u_h^N(x) = \sum_{j=1}^{n} u_j^N \psi_j^N(x)& x \in \Omega^1 \\
+	u_h^N(x) = \sum_{j=1}^{n} u_j^N \psi_j^N(x)& x \in \Omega^N \\
 \end{cases}
 \]
 
 
+In case of Truss, \ref{stiffness} can be written as
+\begin{eqnarray}
+	[K^e] = \frac{E_e A_e}{h_e}
+\begin{bmatrix}
+	1 & -1\\
+	-1 & 1
+\end{bmatrix},\quad\quad\quad
+\end{eqnarray}
+as $a_e = A_e E_e$ for a bar
 
+We can embed this truss element along x-axis by placing it in 2D plane.
+then,
+\begin{eqnarray}
+	\frac{E_e A_e}{h_e}
+	\begin{bmatrix}
+		1 & 0 & -1 & 0\\
+		0 & 0 & 0 & 0\\
+		-1 & 0 & 1 & 0\\
+		0 & 0 & 0 & 0
+	\end{bmatrix}
+	\begin{bmatrix}
+		\bar{u_1^e} \\
+		\bar{v_2^e} \\
+		\bar{u_1^e} \\
+		\bar{v_2^e}
+	\end{bmatrix}
+	= 	\begin{bmatrix}
+		\bar{F_1^e} \\
+		0 \\
+		\bar{F_1^e} \\
+		0
+	\end{bmatrix}
+\end{eqnarray}
 
+This can be expressed as
+\begin{eqnarray}	
+	[\bar{K^e}]\{\bar{\Delta^e}\} = \{\bar{F^e}\}
+\end{eqnarray}
 
+Here we have used the $\bar{x}$  to emphasize that these are local coordinates of the element.
+also $\bar{F_1^e} = \bar{f_1^e} + \bar{Q_1^e}$. $\bar{u_1^e}$ and $ \bar{v_2^e} $ denote the displacement along local x and y -axis respectively. 
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth , height=0.5\linewidth]{T3}
+	\caption{A typical Truss Element}
+\end{figure}
+Now let us suppose that the element is placed making angle $\theta_e$ with the x-axis. Then The transformation matrix to convert from local to global are,
+\begin{eqnarray}
+	\begin{bmatrix}
+	x \\
+	y \\
+	\end{bmatrix}
+	\begin{bmatrix}
+		\cos{\theta_e} & -\sin{\theta_e} \\
+		\sin{\theta_e} & \cos{\theta_e} 
+	\end{bmatrix}
+	\begin{bmatrix}
+		\bar{x_e} \\
+		\bar{y_e}
+	\end{bmatrix}
+\end{eqnarray}
+
+Using the above transformation for displacements and forces
+\begin{eqnarray}
+\begin{bmatrix}
+	\bar{u_1^e} \\
+	\bar{v_2^e} \\
+	\bar{u_1^e} \\
+	\bar{v_2^e}
+\end{bmatrix} =
+\begin{bmatrix}
+		\cos{\theta_e} & -\sin{\theta_e} & 0 & 0\\
+		\sin{\theta_e} & \cos{\theta_e} & 0 & 0\\
+		0 &  0 &\cos{\theta_e} & -\sin{\theta_e} \\
+		0& 0& \sin{\theta_e} & \cos{\theta_e}  
+\end{bmatrix}
+\begin{bmatrix}
+{u_1^e} \\
+{v_2^e} \\
+{u_1^e} \\
+{v_2^e}
+\end{bmatrix}
+\end{eqnarray}
+
+\begin{eqnarray}	
+\{\bar{\Delta^e}\} = [T^e]  \{\Delta^e\}
+\end{eqnarray}
+\begin{eqnarray}	
+\{\bar{F^e}\} = [T^e]  \{F^e\}
+\end{eqnarray}
+
+\begin{eqnarray}	
+	[\bar{K^e}][T^e]  \{\Delta^e\} = [T^e]  \{F^e\}\\
+	\implies [T^e]^T [\bar{K^e}] [T^e] {\bar{\Delta^e}} =  [T^e]^T \{\bar{F^e}\}\\
+\end{eqnarray}
+
+let 
+\begin{eqnarray}
+	\{ F^e \}=[T^e]^T \{ \bar{F^e} \}
+\end{eqnarray}
+\begin{eqnarray}
+	[K^e] =  [T^e]^T [\bar{K^e}] [T^e]
+\end{eqnarray}
+
+So finally we can write,
+\begin{eqnarray}	
+	[{K^e}]\{{\Delta^e}\} = \{{F^e}\}
+\end{eqnarray}
+
+where,
+\begin{eqnarray}
+[K^e] = \frac{E_e A_e}{h_e}
+	\begin{bmatrix}
+		\cos^2{\theta_e} & \frac{1}{2}\sin{2\theta_e} & -\cos^2{\theta_e} & -\frac{1}{2}\sin{2\theta_e}\\
+		\frac{1}{2}\sin{2\theta_e} & \sin^2{\theta_e} & -\frac{1}{2}\sin{2\theta_e} & -\sin^2{\theta_e}\\
+			-\cos^2{\theta_e} & -\frac{1}{2}\sin{2\theta_e} & \cos^2{\theta_e} & \frac{1}{2}\sin{2\theta_e}\\
+		-\frac{1}{2}\sin{2\theta_e} & -\sin^2{\theta_e} & \frac{1}{2}\sin{2\theta_e} & \sin^2{\theta_e}\\
+	\end{bmatrix}
+\end{eqnarray}
 \pagebreak
 
+Further process is identical to the assembly and solving linear equations as we explained above.
 \section{\bf Python Implementation}
 
 \subsection{Input/Output}

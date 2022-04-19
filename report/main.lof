@@ -1,9 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Truss in bridge}}{4}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Truss in roofing}}{5}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Three Dimensional Truss}}{5}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Truss in bridge}}{4}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Truss in roofing}}{5}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Three Dimensional Truss}}{5}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Linear Lagrange Interpolation Functions}}{15}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Local Coordinate system for elements}}{15}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of basic Assembly of elements}}{16}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Assembly process for Secondary Variables}}{17}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Obtaining Global solution from element solutions}}{18}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces A typical Truss Element}}{19}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Truss}}{17}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Truss}}{25}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Above Truss as drawn by truss\_solve module}}{26}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Above Truss along with deformation}}{26}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Solving using Frame3DD}}{27}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

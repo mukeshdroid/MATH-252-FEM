@@ -1,6 +1,6 @@
 # FRAME3DD ANALYSIS RESULTS  http://frame3dd.sf.net/ VERSION 20140514+ 
 # Input Data file for Verification-I - 2D structural frame analysis (N m Kg) 
-# Mon Apr 18 12:46:21 2022
+# Tue Apr 19 14:19:30 2022
 # G N U P L O T   S C R I P T   F I L E 
 set autoscale
 unset border

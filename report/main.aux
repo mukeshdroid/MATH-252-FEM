@@ -3,7 +3,6 @@
 \@writefile{toc}{\contentsline {chapter}{\bf  ACKNOWLEDGEMENTS}{iii}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{LIST OF FIGURES}{vi}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{LIST OF TABLES}{vii}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\bf  LIST OF SYMBOLS}{viii}\protected@file@percent }
 \citation{hrennikoff1941solution}
 \citation{courant1943variational}
 \citation{bandela2020finite}
@@ -28,30 +27,49 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Three Dimensional Truss}}{5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}\bf  {Mathematical Model and solution methods}}{7}\protected@file@percent }
 \newlabel{approxfunc}{{2.9}{7}}
+\newlabel{approxsoln}{{2.9}{7}}
 \newlabel{weightedintegralgen}{{2.14}{8}}
 \newlabel{weightedint}{{2.15}{8}}
+\newlabel{weightedintform}{{2.15}{8}}
 \newlabel{weakform1}{{2.17}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}\bf  Python Implementation}{13}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Input/Output}{13}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Example of a CSV file used to input node data}}{13}\protected@file@percent }
-\newlabel{node_csv_table}{{2.1}{13}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Example of a CSV file used to input element data}}{13}\protected@file@percent }
-\newlabel{element_csv_table}{{2.2}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Element and Node classes}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Visualization}{15}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}RESULTS AND DISCUSSIONS}{17}\protected@file@percent }
+\newlabel{expandedweak}{{2.26}{10}}
+\newlabel{variational}{{2.32}{11}}
+\newlabel{linearBl}{{2.34}{11}}
+\newlabel{gencoeff}{{2.35}{11}}
+\newlabel{variational}{{2.44}{12}}
+\newlabel{locallagrange}{{2.60}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Linear Lagrange Interpolation Functions}}{15}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Local Coordinate system for elements}}{15}\protected@file@percent }
+\newlabel{stiffness}{{2.70}{16}}
+\newlabel{system1}{{2.71}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of basic Assembly of elements}}{16}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Assembly process for Secondary Variables}}{17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Obtaining Global solution from element solutions}}{18}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces A typical Truss Element}}{19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}\bf  Python Implementation}{21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Input/Output}{21}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Example of a CSV file used to input node data}}{21}\protected@file@percent }
+\newlabel{node_csv_table}{{2.1}{21}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Example of a CSV file used to input element data}}{22}\protected@file@percent }
+\newlabel{element_csv_table}{{2.2}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Element and Node classes}{22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Visualization}{23}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}RESULTS AND DISCUSSIONS}{25}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}{\bf  {Result}}}{17}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Truss}}{17}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Comparision of results obtained in python to that in frame3dd for displacement.}}{18}\protected@file@percent }
-\newlabel{Comparision_table}{{3.1}{18}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}CONCLUSIONS}{19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}{\bf  {Result}}}{25}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Truss}}{25}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Above Truss as drawn by truss\_solve module}}{26}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Above Truss along with deformation}}{26}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Solving using Frame3DD}}{27}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Comparision of results obtained in python to that in frame3dd for displacement.}}{27}\protected@file@percent }
+\newlabel{Comparision_table}{{3.1}{27}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}CONCLUSIONS}{29}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibstyle{amsplain}
 \bibdata{bibtex_database/citation}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Contributions}{20}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Contributions}{30}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{banakh2022oscillations}{1}
