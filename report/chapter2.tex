@@ -29,31 +29,40 @@ Later, after determining the minimum area of cross section of individual structu
 
 Equation of truss: \\
 
-The strain-displacement relationship is: \\
-\begin{eqnarray}
+The strain-displacement and stress-strain relationship  is: \\
+\begin{eqnarray}\label{rodeqn}
 	\epsilon = \frac{du}{dx}\\
 	\sigma = E\epsilon
 \end{eqnarray}
 
-From the law of equilibrium, we get,
-\begin{eqnarray}
-	A\sigma_x = T = constant
-\end{eqnarray}
+where $ \epsilon $ is strain , $\sigma$ is strain and $u$ is the displacement.
 
-Combining, the equations, we get:
+    \begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth , height=0.4\linewidth]{rod}
+	\caption{derivation of equation for a rod}
+\end{figure}
+From the law of equilibrium, we get, 
 \begin{eqnarray}
-	AE\frac{du}{dx} = T = constant
+	A\sigma = A(\sigma + \Delta \sigma) + q(x) \Delta x 
 \end{eqnarray}
-
-Differentiating with respect to x, we get,
+where $q(x) \Delta x$ is the force acting on the slice of the bar under consideration.
 \begin{eqnarray}
-	\frac{d}{dx}(AE\frac{du}{dx}) = 0
+ A \frac{(\sigma_{x + \Delta x} - \sigma_x)}{\Delta x} + q(x)  = 0
 \end{eqnarray}
-is the equation of truss.
+Taking limit as $\Delta x \to 0 $ 
+\begin{eqnarray}
+A \frac{d\sigma}{dx} + q(x)  = 0
+\end{eqnarray}
+Using \ref{rodeqn} , we get:
+\begin{eqnarray}
+	- AE \frac{d^2u}{dx^2} = q(x)
+\end{eqnarray}
+which is the equation of truss.
 
 \pagebreak
 \section{\bf{Mathematical Model and solution methods}}
-%part assigned to samrajya
+
 
 Consider\\
 \begin{eqnarray}
@@ -522,8 +531,6 @@ In the figure below,
 where $Q_I$ is the magnitude of the external point source applied.
 
 Adding eqn \ref{system1} for sucessive elements, we get
-
-
 \begin{eqnarray*}
 \begin{bmatrix}
 		K_{11}^1 & K_{12}^1 & 0 & \dots & 0 & 0 \\
@@ -696,10 +703,12 @@ where,
 \end{eqnarray}
 
 Further process is identical to the assembly and solving linear equations as we explained above.
+
+More details can be obtained from \cite{oden2012introduction}. 
 \pagebreak
 \section{\bf Python Implementation}
 
-\subsection{Input/Output}
+\subsection*{Input/Output}
 To feed the data to our program, we came up with the idea of using csv files so as to make the program available for general problems and for a easy to use input interface.\\
 
 
@@ -778,10 +787,10 @@ Table \ref{element_csv_table} shows the input format of the elements where each 
 
 The output is similarly given as a CSV file.
 
-\subsection{Element and Node classes}
+\subsection*{Element and Node classes}
 The input from csv files are then used to define the objects of two classes namely node and ele. These class have all the attributes needed and methods to be able to easily manipulate and visualize them.
 
-Formation of global stiffness matrix was a challenge and reducing the code to faster execution and simplicity was even bigger of a task. Finally the method applied is as follows.
+Formation of global stiffness matrix was a challenge and reducing the code to faster execution and simplicity was even bigger of a task. We took inspiration of ideas from \cite{kattan2010matlab} Finally the method applied is as follows.
 
 
 \begin{lstlisting}[language=Python , basicstyle=\linespread{0.75}\listingsfont]
@@ -842,7 +851,7 @@ GK_dis = np.delete(GK_dis,del_row,1)
 \end{lstlisting}
 
 
-\subsection{Visualization}
+\subsection*{Visualization}
 For the last and final part of visualizing our problem and the visualizing the solution so as to make each bit of data understandable we used the Turtle module of Python. Initially we draw our problem provided the position of the nodes and elements connecting them.
 
 \begin{lstlisting}[language=Python , basicstyle=\linespread{0.75}\listingsfont]
@@ -880,7 +889,4 @@ For the last and final part of visualizing our problem and the visualizing the s
 \end{lstlisting}
 
  Then using the displacement data of each node that we get after the computation, the same algorithm is applied to draw the final result/ shape of the truss. This time the position of node is the sum of its original position and its displacement in x and y-axis. Different tools have been used to make the visualized problem and result understandable.\\
- 
- 
- \textbf{The complete code can be found at \url{https://github.com/mukeshdroid/trussfem}}
 

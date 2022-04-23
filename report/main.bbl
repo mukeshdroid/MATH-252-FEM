@@ -1,42 +1,245 @@
-\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
-\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
-% \MRhref is called by the amsart/book/proc definition of \MR.
-\providecommand{\MRhref}[2]{%
-  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
-}
-\providecommand{\href}[2]{#2}
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{banakh2022oscillations}
-Ludmila Banakh, \emph{Oscillations properties of the dynamic fractal
-  structures}, Journal of Sound and Vibration \textbf{520} (2022), 116541.
+\datalist[entry]{none/global//global/global}
+  \entry{hrennikoff1941solution}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HA}{%
+         family={Hrennikoff},
+         familyi={H\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Mechanical Engineers}%
+    }
+    \strng{namehash}{HA1}
+    \strng{fullhash}{HA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Solution of problems of elasticity by the framework method}
+    \field{year}{1941}
+  \endentry
 
-\bibitem{bandela2020finite}
-Vinod Bandela and Saraswathi Kanaparthi, \emph{Finite element analysis and its
-  applications in dentistry}, Finite Element Methods and Their Applications,
-  IntechOpen London, UK, 2020.
+  \entry{courant1943variational}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CR}{%
+         family={Courant},
+         familyi={C\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Mathematical Society}%
+    }
+    \strng{namehash}{CR1}
+    \strng{fullhash}{CR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 23}
+    \field{title}{Variational methods for the solution of problems of
+  equilibrium and vibrations}
+    \field{volume}{49}
+    \field{journaltitle}{Bulletin of the American mathematical Society}
+    \field{year}{1943}
+  \endentry
 
-\bibitem{courant1943variational}
-Richard Courant, \emph{Variational methods for the solution of problems of
-  equilibrium and vibrations}, Bulletin of the American mathematical Society
-  \textbf{49} (1943), no.~1, 1--23.
+  \entry{bandela2020finite}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=BV}{%
+         family={Bandela},
+         familyi={B\bibinitperiod},
+         given={Vinod},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kanaparthi},
+         familyi={K\bibinitperiod},
+         given={Saraswathi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IntechOpen London, UK}%
+    }
+    \strng{namehash}{BVKS1}
+    \strng{fullhash}{BVKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Finite Element Methods and Their Applications}
+    \field{title}{Finite Element Analysis and Its Applications in Dentistry}
+    \field{year}{2020}
+  \endentry
 
-\bibitem{hrennikoff1941solution}
-Alexander Hrennikoff, \emph{Solution of problems of elasticity by the framework
-  method},  (1941).
+  \entry{stein2009olgierd}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SE}{%
+         family={Stein},
+         familyi={S\bibinitperiod},
+         given={Erwin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SE1}
+    \strng{fullhash}{SE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{264\bibrangedash 272}
+    \field{title}{Olgierd C. Zienkiewicz, a pioneer in the development of the
+  finite element method in engineering science}
+    \field{volume}{2}
+    \field{journaltitle}{Steel Construction: Design and Research}
+    \field{year}{2009}
+  \endentry
 
-\bibitem{stein2009olgierd}
-Erwin Stein, \emph{Olgierd c. zienkiewicz, a pioneer in the development of the
-  finite element method in engineering science}, Steel Construction: Design and
-  Research \textbf{2} (2009), no.~4, 264--272.
+  \entry{strang1973analysis}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SG}{%
+         family={Strang},
+         familyi={S\bibinitperiod},
+         given={Gilbert},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FGJ}{%
+         family={Fix},
+         familyi={F\bibinitperiod},
+         given={George\bibnamedelima J},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SGFGJ1}
+    \strng{fullhash}{SGFGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An analysis of the finite element method(Book- An analysis of
+  the finite element method.)}
+    \field{journaltitle}{Englewood Cliffs, N. J., Prentice-Hall, Inc., 1973.
+  318 p}
+    \field{year}{1973}
+  \endentry
 
-\bibitem{strang1973analysis}
-Gilbert Strang and George~J Fix, \emph{An analysis of the finite element
-  method(book- an analysis of the finite element method.)}, Englewood Cliffs,
-  N. J., Prentice-Hall, Inc., 1973. 318 p (1973).
+  \entry{zienkiewicz2005finite}{book}{}
+    \name{author}{3}{}{%
+      {{hash=ZOC}{%
+         family={Zienkiewicz},
+         familyi={Z\bibinitperiod},
+         given={Olek\bibnamedelima C},
+         giveni={O\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=TRL}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Robert\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZJZ}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Jian\bibnamedelima Z},
+         giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ZOCTRLZJZ1}
+    \strng{fullhash}{ZOCTRLZJZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The finite element method: its basis and fundamentals}
+    \field{year}{2005}
+  \endentry
 
-\bibitem{zienkiewicz2005finite}
-Olek~C Zienkiewicz, Robert~L Taylor, and Jian~Z Zhu, \emph{The finite element
-  method: its basis and fundamentals}, Elsevier, 2005.
+  \entry{banakh2022oscillations}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BL}{%
+         family={Banakh},
+         familyi={B\bibinitperiod},
+         given={Ludmila},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BL1}
+    \strng{fullhash}{BL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{116541}
+    \field{title}{Oscillations properties of the dynamic fractal structures}
+    \field{volume}{520}
+    \field{journaltitle}{Journal of Sound and Vibration}
+    \field{year}{2022}
+  \endentry
 
-\end{thebibliography}
+  \entry{oden2012introduction}{book}{}
+    \name{author}{2}{}{%
+      {{hash=OJT}{%
+         family={Oden},
+         familyi={O\bibinitperiod},
+         given={John\bibnamedelima Tinsley},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=RJN}{%
+         family={Reddy},
+         familyi={R\bibinitperiod},
+         given={Junuthula\bibnamedelima Narasimha},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Courier Corporation}%
+    }
+    \strng{namehash}{OJTRJN1}
+    \strng{fullhash}{OJTRJN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An introduction to the mathematical theory of finite
+  elements}
+    \field{year}{2012}
+  \endentry
+
+  \entry{kattan2010matlab}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KPI}{%
+         family={Kattan},
+         familyi={K\bibinitperiod},
+         given={Peter\bibnamedelima I},
+         giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{KPI1}
+    \strng{fullhash}{KPI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MATLAB guide to finite elements: an interactive approach}
+    \field{year}{2010}
+  \endentry
+\enddatalist
+\endinput

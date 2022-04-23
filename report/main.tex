@@ -14,6 +14,7 @@
 %\usepackage{apacite}
 \usepackage{sectsty}
 \usepackage{listings}
+\usepackage[backend=bibtex , sorting=none]{biblatex}
 
 \chapterfont{\centering}
 
@@ -49,6 +50,10 @@
 %-------
 \graphicspath{ {./figures/} }
 %-----------
+
+\renewcommand{\bibname}{\centering REFERENCES}
+
+\addbibresource{citation} % data base
 
 % % % % % % % % % % % % % % % % % % % % % % %
 % % % % FOR ADJUSTMENT OF PAGES
@@ -105,10 +110,10 @@ BY
 \begin{center}
 \begin{itemize}
 \begin{center}
-\item[1.] Samrajya Raj Acharya(Exam Roll No.)
-\item[2.] Bishesh Kafle (Exam Roll No.)
-\item[3.] Priyanka Panta (Exam Roll No.)
-\item[4.] Mukesh Tiwari (Exam Roll No.)
+\item[1.] Samrajya Raj Acharya(026592-19)
+\item[2.] Bishesh Kafle (026600-19)
+\item[3.] Priyanka Panta (026605-19)
+\item[4.] Mukesh Tiwari (026615-19)
 \end{center}
 \end{itemize}
 
@@ -117,7 +122,7 @@ BY
 
 \vspace{1.0cm}
 
-\begin{figure}[htpb]
+\begin{figure}[h]
 \centering
 \includegraphics[height=4.5cm,width=4.5cm]{photos/kulogo.jpg}
 \end{figure}
@@ -126,7 +131,7 @@ BY
 \vspace{2cm}
 {\normalsize
 \begin{center}
-%DEPARTMENT OF NATURAL SCIENCES (MATHEMATICS)\\
+DEPARTMENT OF MATHEMATICS\\
 SCHOOL OF SCIENCE\\
 KATHMANDU UNIVERSITY\\
 DHULIKHEL, NEPAL\\
@@ -191,12 +196,13 @@ DHULIKHEL, NEPAL\\
 \input{cont}
 
 
+
 %=====================================================================
 % For Reference settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\bibname}{\centering REFERENCES}
-\bibliographystyle{amsplain}
-
-\bibliography{bibtex_database/citation} % data base
+\addcontentsline{toc}{chapter}{REFERENCES}
+\printbibliography
 %===================================================================
+\newpage
+\input{appendix}
 \end{document}
